@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../../public/assets/css/font-awesome-pro.css";
+@import "../../public/assets/scss/bootstrap-variables";
+// @import "../../public/assets/css/flaticon.css";
+@import "../../public/assets/css/spacing.css";
+@import "../../public/assets/css/backtotop.css";
+@import "../../public/assets/css/nice-select.css";
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "react-toastify/dist/ReactToastify.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "../../public/assets/scss/main.scss";
+
+.truncate-3-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bg-color-contact {
+  background-color: #696969;
+}
+.active-link {
+  color: $theme-light !important;
+  font-weight: bold;
+  text-decoration: underline;
+}

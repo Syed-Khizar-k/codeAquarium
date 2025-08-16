@@ -1,0 +1,7 @@
+[9/4/2019, 9:35:04 PM] layer "+812 (345) 6789": Expected Either a default asset specification or a layer asset specification but "+" found.
+[9/4/2019, 9:35:04 PM] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[9/4/2019, 9:35:04 PM] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[9/4/2019, 9:35:04 PM] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[9/4/2019, 9:35:04 PM] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[9/4/2019, 9:35:04 PM] layer "support@gmail.com": Unsupported extension: com
+[9/4/2019, 9:35:04 PM] layer "+812  (345) 778 88": Expected Either a default asset specification or a layer asset specification but "+" found.

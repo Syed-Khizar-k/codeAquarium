@@ -1,0 +1,46 @@
+.breadcrumb-area {
+    background-position: center center;
+    background-size: cover;
+  }
+  .breadcrumb-text {
+      position: relative;
+      z-index: 1;
+  }
+  .breadcrumb-text > h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      line-height: 1;
+      font-family: $c_bold;
+      color: $white;
+  }
+  .breadcrumb-menu li {
+      display: inline-block;
+      position: relative;
+      padding: 0 19px;
+  }
+  .breadcrumb-menu li a {
+      color: $theme-light;
+      font-size: 20px;
+      font-family:$c_reg;
+      text-transform: capitalize;
+      transition: all 0.3s ease 0s;
+  }
+  .breadcrumb-menu li::before {
+      content: "||";
+      display: inline-block;
+      padding-bottom: 0;
+      position: absolute;
+      top: 4px;
+      color:$theme-light;
+      left: -7px;
+  }
+  .breadcrumb-menu li:first-child::before {
+      display: none;
+  }
+  .breadcrumb-menu span {
+      color: $theme-light;
+      font-size: 20px;
+      font-family: $c_reg;
+      text-transform: capitalize;
+  }

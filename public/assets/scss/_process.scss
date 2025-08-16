@@ -1,0 +1,103 @@
+.working-process-area{
+    background-size:cover;
+    background-position: center center;
+}
+.working-process-icon{
+    margin-bottom: 30px;
+    position: relative;
+    & i{
+        color:$white;
+        font-size: 60px;
+        height: 140px;
+        width: 140px;
+        line-height: 140px;
+        background: #318bf0;
+        border-radius: 5px;
+        display: inline-block;
+    }
+}
+.angle-icon {
+	position: absolute;
+	top: 42px;
+	right: -162px;
+}
+.working-process-text{
+    & h3{
+        color: $white;
+        font-size: 24px;
+        font-family: $c_bold;
+        margin-bottom: 10px;
+    }
+    & p{
+        color: $white;
+        margin-bottom: 0;
+        line-height: 30px;
+    }
+}
+.wor-01 {
+	bottom: 6%;
+	right: 4%;
+}
+.wor-02 {
+	bottom: 15%;
+	left: 6%;
+}
+
+// work-process
+.work-process-wrapper {
+	border: 2px solid #f1f1f1;
+    padding: 74px 45px 66px 45px;
+    position: relative;
+    transition: .3s;
+}
+.work-process-wrapper::before {
+	background-image: url("../img/bg/work.png");
+	background-repeat: no-repeat;
+	content: "";
+	height: 100%;
+	position: absolute;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	opacity: 0;
+	background-size: cover;
+}
+.work-process-wrapper:hover::before {
+	opacity: 1;
+}
+.work-process-wrapper.active::before {
+	opacity: 1;
+}
+.work-process-wrapper:hover{border-color: $theme-color;}
+.work-process-wrapper.active{border-color: $theme-color;}
+.inner-content {
+	position: relative;
+}
+.work-process-icon {
+	margin-bottom: 30px;
+}
+.work-process-text{
+    & h3{
+        font-size: 24px;
+         font-family: $c_bold;
+         margin-bottom: 11px;
+         transition: .3s;
+    }
+    & p{
+        margin-bottom: 0;
+       line-height: 30px;
+       transition: .3s;
+    }
+}
+.work-process-wrapper:hover .work-process-text h3{color:$white;}
+.work-process-wrapper:hover .work-process-text p{color:$white;}
+.work-process-wrapper.active .work-process-text h3{color:$white;}
+.work-process-wrapper.active .work-process-text p{color:$white;}
+
+.RCP {
+    margin: 0 auto;
+    overflow: hidden;
+}

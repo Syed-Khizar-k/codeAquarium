@@ -1,0 +1,108 @@
+.pricing-area {
+	background-size: cover;
+	background-position: center center;
+}
+.pricing-wrapper{
+    background: $white;
+    position: relative;
+    border-radius: 5px;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.pricing-icon {
+	margin-bottom: 22px;
+}
+.price-count h1 {
+	font-size: 35px;
+	line-height: 1;
+	margin-bottom: 18px;
+    font-family: $c_bold;
+    color: $theme-color;
+}
+.price-count h1 span.usd {
+	position: relative;
+	right: 2px;
+}
+.pricing-top-text h3 {
+	font-size: 24px;
+    text-transform: uppercase;
+    color: $theme-color;
+    font-family: $c_bold;
+}
+.pricing-menu {
+	border: 1px solid #e7e7e7;
+	margin: 36px 40px;
+    padding: 20px 0;
+    transition: .3s;
+}
+.pricing-wrapper.active .pricing-menu{border-color:$theme-color;}
+.pricing-wrapper:hover .pricing-menu{border-color:$theme-color;}
+.pricing-menu ul li {
+	color: #808080;
+	font-size: 16px;
+    padding-bottom: 16px;
+    font-family:$c_reg;
+    &:last-child{padding-bottom: 0;}
+}
+.pricing-button a{
+    position: relative;
+    display: inline-block;
+    margin-top: 24px;
+    font-family: $c_sem;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 13px 29px;
+    transition: .3s;
+    border-radius: 5px;
+    vertical-align: middle;
+    border:2px solid #ececec;
+}
+.pricings-button {
+	color: $black;
+	z-index: 999;
+    position: relative;
+    transition: .3s;
+}
+.pricings-button i{margin-left: 5px;}
+.pricing-button a:hover .pricings-button{color: $white;}
+.pricing-button a:hover{border-color:#1065c4;}
+.pricing-button.active a .pricings-button{color: $white;}
+.pricing-button.active a{border-color:#1065c4;}
+.pricing-button a::before {
+	content: '';
+	width: 0;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	background: $theme-color;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.4s ease;
+}
+.pricing-button a:hover::before{
+	width: 100%;
+	left: 0;
+	-webkit-transition: width 0.3s ease;
+	transition: width 0.3s ease;
+}
+.pricing-button.active a::before{
+	width: 100%;
+	left: 0;
+	-webkit-transition: width 0.3s ease;
+	transition: width 0.3s ease;
+}
+.pricing-tag {
+	background: #096bd8;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	padding: 1px 9px 2px;
+	border-radius: 5px;
+}
+.pricing-tag span{
+    color: $white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $c_bold;
+}
+.single-pricing{border:1px solid #e7e7e7;}

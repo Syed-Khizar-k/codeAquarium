@@ -1,0 +1,144 @@
+
+.team-img img{width:100%;}
+.team-text {
+	border: 1px solid #ebebeb;
+    padding: 22px 40px 30px 40px;
+    & h4{
+        font-size: 22px;
+        font-family: "cerebri_sansbold";
+        margin-bottom: 3px;
+     }
+     & span{
+        font-size: 14px;
+        text-transform: uppercase;
+        color:#ababab;
+        font-family: $c_reg;
+     }
+}
+.team-icon {
+	margin-top: 9px;
+}
+.team-icon a {
+	color: #cbcbcb;
+	font-size: 14px;
+	transition: .3s;
+	margin-right: 15px;
+}
+.team-icon a:last-child{margin-right:0;}
+.team-icon a:hover{color: $theme-color;}
+.team-section p {
+	margin-bottom: 26px;
+}
+.shape-item {
+	position: absolute;
+}
+.team-01 {
+	top: 24%;
+	right: 11%;
+}
+.team-02 {
+	top: 13%;
+	right: 11%;
+}
+// team-2
+.team-2-wrapper{padding:30px 20px;}
+.team-content{
+	margin-top:24px;
+	& h4{
+		color:$white;
+		font-family: $c_bold;
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+	& span{
+		color:$white;
+		font-size: 14px;
+		font-family: $c_reg;
+		text-transform: uppercase;
+	}
+}
+.team-content .team-icon {
+	margin-top: 25px;
+}
+.team-content .team-icon a {
+	font-size: 14px;
+	transition: .3s;
+	margin: 0 2px;
+	height: 40px;
+	width: 40px;
+	background: #1478e8;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	color: #9fccff;
+	&:hover{
+		background: $white;
+		color:$theme-color;
+	}
+}
+
+
+
+// single-team
+.single-team-wrapper {
+	margin-right: 95px;
+	margin-top: 24px;
+}
+.single-team-text h1 {
+	font-size: 45px;
+}
+.single-team-text > span {
+	font-size: 16px;
+   text-transform: uppercase;
+   color:$theme-color;
+   font-family: $c_bold;
+}
+.single-team-text p {
+	margin-bottom: 0;
+	margin-top: 26px;
+}
+.team-single {
+	margin-top: 37px;
+}
+.single-team-icon {
+	float: left;
+	margin-right: 20px;
+}
+.team-info > span {
+	color: #828282;
+	font-size: 16px;
+}
+.team-info h4 {
+	margin-bottom: 0;
+	font-size: 20px;
+	margin-top: 3px;
+}
+.single-team-info {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.single-team-info:last-child{margin-bottom: 0;}
+.team-2-icon span {
+	color: #333333;
+   font-size: 20px;
+   font-family: $c_bold;
+   margin-right: 7px;
+}
+.team-2-icon{
+   margin-top:40px;
+	& a{
+         height: 45px;
+         width: 45px;
+         background: #f0f0f0;
+         line-height: 45px;
+         display: inline-block;
+         text-align: center;
+         border-radius: 5px;
+         transition: .3s;
+         color: #a8a8a8;
+         font-size: 16px;
+		&:hover{background:  $theme-color;color: $white;}
+		margin-right: 5px;
+	}
+}
