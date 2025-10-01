@@ -19,6 +19,22 @@ import IconSix from "../../public/assets/img/icon/06.png"
     },
     {
       id: 2,
+      img: IconOne,
+      title: "Agentic AI",
+      details:
+        "We specialize in creating responsive, user-friendly websites tailored to your business needs. From frontend design to backend functionality and database integration, we deliver seamless digital experiences.",
+      icon: "fas fa-long-arrow-alt-right",
+    },
+    {
+      id: 3,
+      img: IconOne,
+      title: "Workflow Automation",
+      details:
+        "We specialize in creating responsive, user-friendly websites tailored to your business needs. From frontend design to backend functionality and database integration, we deliver seamless digital experiences.",
+      icon: "fas fa-long-arrow-alt-right",
+    },
+    {
+      id: 4,
       img: IconTwo,
       title: "Artificial Inteligence",
       details:
@@ -26,7 +42,7 @@ import IconSix from "../../public/assets/img/icon/06.png"
       icon: "fas fa-long-arrow-alt-right",
     },
     {
-      id: 3,
+      id: 4,
       img: IconThree,
       title: "Digital Marketing",
       details:
@@ -34,7 +50,7 @@ import IconSix from "../../public/assets/img/icon/06.png"
       icon: "fas fa-long-arrow-alt-right",
     },
     {
-      id: 4,
+      id: 5,
       img: IconFour,
       title: "DevOps Services",
       details:
@@ -42,7 +58,7 @@ import IconSix from "../../public/assets/img/icon/06.png"
       icon: "fas fa-long-arrow-alt-right",
     },
     {
-      id: 5,
+      id: 6,
       img: IconFive,
       title: "Data Scraping",
       details:
@@ -50,7 +66,7 @@ import IconSix from "../../public/assets/img/icon/06.png"
       icon: "fas fa-long-arrow-alt-right",
     },
     {
-      id: 6,
+      id: 7,
       img: IconSix,
       title: "UX/UI Strategy",
       details:

@@ -6,7 +6,6 @@ import * as Yup from "yup";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-
 const contactSchema = Yup.object().shape({
   name: Yup.string().min(3, "Too short!").required("Name is required"),
   email: Yup.string()
@@ -48,7 +47,7 @@ const ContactFormHomeTwo = () => {
 
         // Send the request
         const response = await axios.post(
-          "http://mgtd_dev_v1.lndo.site:8080/api/create_pages",
+          "752eccf3-142a-4460-b4aa-76508b222f66",
           values,
           { headers }
         );
@@ -77,10 +76,11 @@ const ContactFormHomeTwo = () => {
   });
   return (
     <>
-      <form id="contact-form" onSubmit={formik.handleSubmit}>
-        <div className="row">
+      <form action="https://api.web3forms.com/submit" method="POST"  id="contact-form" onSubmit={formik.handleSubmit}>
+        <div className="row ">
           <div className="col-lg-6">
             <div className="form-box user-icon mb-30">
+              <input type="hidden" name="access_key" value="752eccf3-142a-4460-b4aa-76508b222f66"></input>
               <input
                 type="text"
                 name="name"
@@ -128,6 +128,8 @@ const ContactFormHomeTwo = () => {
             >
               <option value="" label="Select Subject" />
               <option value="Web Development" label="Web Development" />
+               <option value="Agentic AI" label="Agentic AI" />
+              <option value="Workflow Automation" label="Workflow Automation" />
               <option
                 value="Artificial Inteligence"
                 label="Artificial Inteligence"

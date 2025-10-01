@@ -12,11 +12,11 @@ const ContactArea = () => {
                                      backgroundColor:"#ffffff" }}>
                                     <i className='fas fa-envelope-open'> </i>
                                     <h3>Mail Here</h3>
-                                    <p>info@nextorbitsol.com</p>
+                                    <p>info@codeaquariam.com</p>
                                     {/* <p>www.infotorun.net</p> */}
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-lg-4 col-md-4">
+                            {/* <div className="col-xl-4 col-lg-4 col-md-4">
                                 <div className="contact text-center mb-0"  style={{ 
                                     // background: "url(assets/img/bg/contact-bg.png)"
                                     backgroundColor:"#ffffff" }}>
@@ -24,7 +24,7 @@ const ContactArea = () => {
                                     <h3>Visit Here</h3>
                                     <p>Virginia USA</p>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl-4  col-lg-4 col-md-4 ">
                                 <div className="contact text-center mb-0" style={{
                                     //  background: "url(assets/img/bg/contact-bg.png)"
@@ -32,7 +32,7 @@ const ContactArea = () => {
                                      }}>
                                     <i className='fas fa-phone'> </i>
                                     <h3>Call Us Now</h3>
-                                    <p> +1 (571) 477-6832</p>
+                                    <p> +92-3174750492</p>
                                 </div>
                             </div>
                         </div>

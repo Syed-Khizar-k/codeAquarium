@@ -50,7 +50,7 @@ const ContactForm = () => {
 
         // Send the request
         const response = await axios.post(
-          "https://nextorbit-drupal.asdev.tech/api/create_pages",
+          "752eccf3-142a-4460-b4aa-76508b222f66",
           values,
           { headers }
         );
@@ -97,10 +97,11 @@ const ContactForm = () => {
           </div>
           <div className="col-xl-12">
             <div className="appointment-wrapper contact-form-page">
-              <form id="appointment-form" onSubmit={formik.handleSubmit}>
+              <form action="https://api.web3forms.com/submit" method="POST" id="appointment-form" onSubmit={formik.handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="form-box user-icon mb-30">
+                      <input type="hidden" name="access_key" value="752eccf3-142a-4460-b4aa-76508b222f66"></input>
                       <input
                         type="text"
                         name="name"
@@ -152,6 +153,8 @@ const ContactForm = () => {
                     >
                       <option value="" label="Select Subject" />
                       <option value="Web Development" label="Web Development" />
+                       <option value="Agentic AI" label="Agentic AI" />
+              <option value="Workflow Automation" label="Workflow Automation" />
                       <option
                         value="Artificial Inteligence"
                         label="Artificial Inteligence"

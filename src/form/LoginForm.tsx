@@ -22,7 +22,7 @@ const LoginForm = () => {
     });
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form  onSubmit={handleSubmit}>
       <div className="login__input-wrapper">
         <div className="login__input-item">
           <div className="login__input">
