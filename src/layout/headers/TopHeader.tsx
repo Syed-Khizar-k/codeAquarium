@@ -12,8 +12,8 @@ const TopHeader = () => {
                     <div className="col-xl-8 col-lg-8 col-md-6 d-flex align-items-center">
                         <div className="header-info">
                             {/* <span><i className='far fa-map-marker-alt'></i> 15 Hamston Street, West</span> */}
-                            <span className="header-ph cta-link hover-white"> <Link href="tel:+81234578988" target='_blank'><i className='fa-sharp fa-solid fa-phone'></i> +1 (571) 477-6832</Link> </span>
-                            <span className="header-en hover-white"> <Link href="mailto:info@nextorbitsol.com" target='_blank'><i className='fas fa-envelope-open me-2'></i>info@nextorbitsol.com</Link> </span>
+                            <span className="header-ph cta-link hover-white"> <Link href="tel: +92 (317) 475-0491" target='_blank'><i className='fa-sharp fa-solid fa-phone'></i> +92 (317) 475-0491</Link> </span>
+                            <span className="header-en hover-white"> <Link href="mailto:info@nextorbitsol.com" target='_blank'><i className='fas fa-envelope-open me-2'></i>info@codeaquariam.com</Link> </span>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6">

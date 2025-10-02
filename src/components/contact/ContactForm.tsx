@@ -33,47 +33,71 @@ const ContactForm = () => {
     //   alert("Message Sent Successfully!");
     //   resetForm();
     // },
-
-    onSubmit: async (values, { resetForm }) => {
+        onSubmit: async (values, { resetForm }) => {
       try {
-        // Fetch the CSRF token
-        const tokenResponse = await axios.get(
-          "https://nextorbit-drupal.asdev.tech/session/token"
-        );
-        const csrfToken = tokenResponse.data;
-
-        // Headers for request
-        const headers = {
-          "Content-Type": "application/json",
-          "X-CSRF-Token": csrfToken,
-        };
-
-        // Send the request
         const response = await axios.post(
-          "752eccf3-142a-4460-b4aa-76508b222f66",
-          values,
-          { headers }
+          "https://api.web3forms.com/submit",
+          {
+            access_key: "752eccf3-142a-4460-b4aa-76508b222f66", // your key
+            ...values, // name, email, subject, message
+          }
         );
-
-        console.log("Response:", response.data);
-        toast.success("Message Sent Successfully! 🚀", {
-          position: "top-right",
-          autoClose: 3000, // Close after 3 seconds
-        });
-        resetForm();
-      } catch (error) {
-        if (error instanceof Error) {
-          console.error("Error:", error.message);
-          alert("Failed to send the message. Please try again.");
-        } else {
-          toast.error("Unexpected error occurred!", {
+    
+        if (response.data.success) {
+          toast.success("Message Sent Successfully! 🚀", {
             position: "top-right",
             autoClose: 3000,
           });
-  
+          resetForm();
+        } else {
+          toast.error("Failed to send message. Please try again.");
         }
+      } catch (error) {
+        console.error("Error:", error);
+        toast.error("Something went wrong. Try again later.");
       }
-    },
+    }
+
+    // onSubmit: async (values, { resetForm }) => {
+    //   try {
+    //     // Fetch the CSRF token
+    //     const tokenResponse = await axios.get(
+    //       "https://nextorbit-drupal.asdev.tech/session/token"
+    //     );
+    //     const csrfToken = tokenResponse.data;
+
+    //     // Headers for request
+    //     const headers = {
+    //       "Content-Type": "application/json",
+    //       "X-CSRF-Token": csrfToken,
+    //     };
+
+    //     // Send the request
+    //     const response = await axios.post(
+    //       "752eccf3-142a-4460-b4aa-76508b222f66",
+    //       values,
+    //       { headers }
+    //     );
+
+    //     console.log("Response:", response.data);
+    //     toast.success("Message Sent Successfully! 🚀", {
+    //       position: "top-right",
+    //       autoClose: 3000, // Close after 3 seconds
+    //     });
+    //     resetForm();
+    //   } catch (error) {
+    //     if (error instanceof Error) {
+    //       console.error("Error:", error.message);
+    //       alert("Failed to send the message. Please try again.");
+    //     } else {
+    //       toast.error("Unexpected error occurred!", {
+    //         position: "top-right",
+    //         autoClose: 3000,
+    //       });
+  
+    //     }
+    //   }
+    // },
 
   });
 

@@ -155,10 +155,10 @@ const FooterOne = () => {
                       </div>
                       <div className="contact-address-text">
                         <Link
-                          href="tel:+92 (317)-(475)-0491"
+                          href="tel:+92 (317) 475-0491"
                           target="_blank"
                         >
-                          +92 (317)-(475)-0491
+                          +92 (317) 475-0491
                         </Link>
                       </div>
                     </li>

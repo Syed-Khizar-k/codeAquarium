@@ -32,7 +32,7 @@ const ContactArea = () => {
                                      }}>
                                     <i className='fas fa-phone'> </i>
                                     <h3>Call Us Now</h3>
-                                    <p> +92-3174750492</p>
+                                    <p> +92-3174750491</p>
                                 </div>
                             </div>
                         </div>

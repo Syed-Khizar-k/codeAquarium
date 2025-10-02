@@ -23,7 +23,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row d-flex justify-content-center align-items-center">
             {serviceDataTwo.map((item , index) => (
               <div
                 key={item.id}

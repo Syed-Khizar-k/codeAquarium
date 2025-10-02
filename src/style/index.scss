@@ -26,3 +26,20 @@
   font-weight: bold;
   text-decoration: underline;
 }
+.tech-icon {
+  width: 105px;   /* adjust to match the reference */
+  height: 100px;
+  object-fit: contain;
+  cursor:pointer;
+}
+.service-div{
+  // background-color: rgba(31, 29, 29, 0.44);
+}
+.tech-icon {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.tech-icon:hover {
+  // transform: scale(1.05);
+  transform: scale(0.95);
+}

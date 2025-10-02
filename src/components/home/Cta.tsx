@@ -25,11 +25,12 @@ const Cta = () => {
                   </Link>
                 <Link
                   className="cta-link"
-                  href="tel:+81234578988"
+                  href="tel:+92 (317)
+                  475-0491"
                   target="_blank"
                 >
-                  <i className="fa-sharp fa-solid fa-phone ms-2"></i> +1 (571)
-                  477-6832
+                  <i className="fa-sharp fa-solid fa-phone ms-2"></i> +92 (317)
+                  475-0491
                 </Link>
               </div>
             </div>
