@@ -12,8 +12,10 @@ import twilio_icon from '../../assets/icons/twilio_icon.svg'
 import react_icon from '../../assets/icons/react_icon.svg'
 import postgresql_icon from '../../assets/icons/postgresql_icon.svg'
 import mongodb_icon from '../../assets/icons/mongodb_icon.svg'
-import ai_icon from '../../assets/icons/ai_icon.svg'
+import ai_icon from '../../assets/icons/artificial_intelligence_icon.webp'
 import kotlin_icon from '../../assets/icons/kotlin_icon.svg'
+import web3js_icon from '../../assets/icons/web3js_icon.svg'
+import gpt_icon from '../../assets/icons/genAI_icon.png'
 
 const services = [
   { title: "Python", icon: python_icon },
@@ -21,13 +23,13 @@ const services = [
   { title: "Flask", icon: flask_icon },
   { title: "TensorFlow", icon: tensorflow_icon},
   { title: "JavaScript", icon: javascript_icon },
-  { title: "Tailwind CSS", icon: ai_icon},
+  { title: "Tailwind CSS", icon: tailwind_icon},
   { title: "React", icon: react_icon },
   { title: "MongoDB", icon:mongodb_icon },
   { title: "Postgresql", icon: postgresql_icon },
   { title: "Artificial Intelligence", icon: ai_icon},
-  { title: "Generative AI", icon: ai_icon},
-  { title: "Web3 js", icon: "/icons/web3.svg" },
+  { title: "Generative AI", icon: gpt_icon},
+  { title: "Web3 js", icon: web3js_icon },
   { title: "Kotlin", icon:kotlin_icon},
   { title: "Twilio", icon: twilio_icon },
   { title: "Azure", icon: azure_icon},
@@ -38,20 +40,19 @@ const Technologies = () => {
     <div className="container text-center py-5  service-div">
       <h1 className="mb-5 fw-bold">Our Key Development Technologies</h1>
 
-      <div className="row g-4 border align-items-center justify-content-center"  style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+      <div className="row g-4  align-items-center justify-content-center"  style={{ display: "flex", flexWrap: "wrap" }}>
         {services.map((item, index) => (
-          <div key={index} className="col-6 col-md-4 col-lg-2">
-            <div className="d-flex flex-column align-items-center justify-content-center border">
+            <div key={index} className="d-flex flex-column align-items-center justify-content-center col-6 col-md-4 col-lg-2 mb-2" style={{ minWidth: "225px" }}>
               <Image
                 src={item.icon}
                 alt={item.title}
-                className="img-fluid mb-3  tech-icon bg-dark p-4 rounded h-100 shadow-sm "
-                width={80} 
-              height={80}
+                className="img-fluid mb-3  tech-icon bg-dark p-3 rounded h-100 shadow-sm "
+                width={100} 
+              height={100}
               />
-              <h4 className="fw-semibold text-black">{item.title}</h4>
+              <h5 className="fw-bold  w-100 ">{item.title}</h5>
             </div>
-          </div>
+          
         ))}
       </div>
     </div>

@@ -82,14 +82,14 @@ const HeaderOne = () => {
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3 col-md-6 col-8 d-flex align-items-center">
                 <div className="logo">
-                  <Link className="h4 "   href="/">
+                  <Link className="h4 fw-bold "   href="/">
                     {/* <Image
                       src={logoImg}
                       width={134}
                       height={0}
                       alt="flag"
                     /> */}
-                    Code Aquariam
+                    CodeAquariam
                     {/* <span className="text-capitalize fs-2 fw-normal">next orbit</span>  */}
                   </Link>
                 </div>

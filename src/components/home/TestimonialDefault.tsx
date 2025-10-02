@@ -9,7 +9,7 @@ const TestimonialDefault = () => {
     {
       id: 1,
       details:
-        "Next Orbit transformed our business with their innovative web development solutions.Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
+        "Code Aquariam transformed our business with their innovative web development solutions.Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
       name: "– John Doe,",
       title: "CEO",
     },

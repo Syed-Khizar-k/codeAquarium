@@ -18,56 +18,56 @@ export default function RootLayout({ children }: childrenType) {
   const getTitleAndDescription = () => {
     if (pathname === "/") {
       return {
-        title: "Leading Software Development Company in USA | Next Orbit",
+        title: "Leading Software Development Company in USA | CodeAquariam",
         description:
-          "Next Orbit is a leading web development company in the USA. We specialize in custom web development, cutting-edge software solutions, and result-driven digital marketing services to grow your business.",
+          "Code Aquariam is a leading web development company in the USA. We specialize in custom web development, cutting-edge software solutions, and result-driven digital marketing services to grow your business.",
       };
     } else if (pathname === "/about") {
       return {
         title:
-          "About Us | Custom Web Development & Software Solutions in USA | Next Orbit",
+          "About Us | Custom Web Development & Software Solutions in USA | CodeAquariam",
         description:
-          "Next Orbit is a USA-based software development company offering custom web development, AI solutions, digital marketing, DevOps, and data scraping. Learn more about our mission, expertise, and commitment to innovation.",
+          "Code Aquariam is a USA-based software development company offering custom web development, AI solutions, digital marketing, DevOps, and data scraping. Learn more about our mission, expertise, and commitment to innovation.",
       };
     } else if (pathname === "/services") {
       return {
         title:
-          "Our Services | Next Orbit - Software Development & Digital Solutions",
+          "Our Services | CodeAquariam - Software Development & Digital Solutions",
         description:
-          "Next Orbit offers custom web development, AI solutions, digital marketing, DevOps, data scraping, and UX/UI strategy. Drive innovation and scale your business with our expert technology services.",
+          "Code Aquariam offers custom web development, AI solutions, digital marketing, DevOps, data scraping, and UX/UI strategy. Drive innovation and scale your business with our expert technology services.",
       };
     } else if (pathname === "/service-details/1") {
       return {
         title:
-          "Professional Website Development & Design Services | Next Orbit",
+          "Professional Website Development & Design Services | CodeAquariam",
         description:
-          "Get stunning web design & development from experts. Next Orbit delivers high-performance, mobile-friendly websites to grow your business and brand online | Next Orbit",
+          "Get stunning web design & development from experts. Code Aquariam delivers high-performance, mobile-friendly websites to grow your business and brand online | Code Aquariam",
       };
     }else if (pathname === "/service-details/2") {
       return {
         title:
-          "Top Artificial Intelligence Companies & AI Digital Marketing Solutions | Next Orbit",
+          "Top Artificial Intelligence Companies & AI Digital Marketing Solutions | CodeAquariam",
         description:
-          "Discover cutting-edge artificial intelligence technologies, AI-powered digital marketing, and innovative AI sites to grow your business faster. | Next Orbit",
+          "Discover cutting-edge artificial intelligence technologies, AI-powered digital marketing, and innovative AI sites to grow your business faster. | CodeAquariam",
       };
     }else if (pathname === "/service-details/3") {
       return {
         title:
-          "Best Digital Marketing Agency & Online Marketing Solutions | Next Orbit",
+          "Best Digital Marketing Agency & Online Marketing Solutions | CodeAquariam",
         description:
-          "Boost your business with top-rated digital marketing services, creative online campaigns, and professional marketing agency expertise near you. | Next Orbit",
+          "Boost your business with top-rated digital marketing services, creative online campaigns, and professional marketing agency expertise near you. | CodeAquariam",
       };
     }else if (pathname === "/service-details/4") {
       return {
         title:
-          "Expert DevOps Services & Leading DevOps Companies Solutions | Next Orbit",
+          "Expert DevOps Services & Leading DevOps Companies Solutions | CodeAquariam",
         description:
           "Accelerate your business with cutting-edge DevOps technologies, expert consulting, and top-rated DevOps agency solutions for seamless operations. | Next Orbit",
       };
     }else if (pathname === "/service-details/5") {
       return {
         title:
-          "Professional Web Scraping & Database Scraping Services | Next Orbit",
+          "Professional Web Scraping & Database Scraping Services | CodeAquariam",
         description:
           "Get reliable website scraping, database extraction, and custom web scraping solutions to power your business with accurate, real-time data. | Next Orbit",
       };
@@ -82,27 +82,27 @@ export default function RootLayout({ children }: childrenType) {
     else if (pathname === "/portfolio") {
       return {
         title:
-          "Portfolio | Next Orbit - Software Development & Digital Solutions",
+          "Portfolio | CodeAquariam - Software Development & Digital Solutions",
         description:
-          "Explore Next Orbit’s portfolio of custom web development, AI solutions, digital marketing, DevOps, and data scraping projects. See how we deliver innovative and scalable solutions for businesses across industries.",
+          "Explore Code Aquariam portfolio of custom web development, AI solutions, digital marketing, DevOps, and data scraping projects. See how we deliver innovative and scalable solutions for businesses across industries.",
       };
     }
     else if (pathname === "/contact") {
       return {
         title:
-          "Get in Touch with Our Experts | Next Orbit",
+          "Get in Touch with Our Experts | CodeAquariam",
         description:
-          "Have a project in mind? Contact Next Orbit, a leading software development company in the USA, for custom web development, AI solutions, digital marketing, DevOps, and more. Let's build something great together!",
+          "Have a project in mind? Contact Code Aquariam, a leading software development company in the USA, for custom web development, AI solutions, digital marketing, DevOps, and more. Let's build something great together!",
       };
     }
     else if (pathname.startsWith("/portfolio-details/")) {
       return {
-        title: "Portfolio Details | NextOrbit",
+        title: "Portfolio Details | CodeAquariam",
         description: "Check out our portfolio projects in detail.",
       };
     }
     return {
-      title: "NextOrbit",
+      title: "CodeAquariam",
       description: "Generated by create next app",
     };
   };

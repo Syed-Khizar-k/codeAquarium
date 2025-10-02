@@ -19,12 +19,13 @@ const FooterOne = () => {
                 <div className="footer-wrapper mb-30">
                   <div className="footer-logo">
                     <Link href="/">
-                      <Image
+                      {/* <Image
                         src={footerImg}
                         alt="flag"
                         width={134}
                         height={0}
-                      />
+                      /> */}
+                      <h3 className="fw-bold">CodeAquariam</h3>
                     </Link>
                   </div>
                   <div className="footer-text">

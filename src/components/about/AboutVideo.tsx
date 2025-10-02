@@ -20,7 +20,7 @@ const AboutVideo = () => {
       />
       <div className="choose-text">
         <p>
-          At Next Orbit, we are experts in delivering innovative IT solutions
+          At Code Aquariam, we are experts in delivering innovative IT solutions
           that drive business growth and success. With over 23 years of
           experience, we have built a reputation for excellence, reliability,
           and customer satisfaction. Our team of skilled professionals is

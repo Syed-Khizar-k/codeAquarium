@@ -21,17 +21,17 @@ export const servicesData: servicesType[] = [
     img: thumbOne,
     title: "Web Development Services",
     details:
-      "Your website is frequently the first and most enduring impression that a brand makes in today's digitally first world. In order to create dependable, scalable, and future-ready websites and web apps that meet your company's objectives, Next Orbit  provides top-notch web development services.",
+      "Your website is frequently the first and most enduring impression that a brand makes in today's digitally first world. In order to create dependable, scalable, and future-ready websites and web apps that meet your company's objectives, Code Aquariam  provides top-notch web development services.",
     icon: "fas fa-long-arrow-alt-right",
     banner: imgOne,
     content: [
       {
         type: "subheading",
-        text: "Use Next Orbit Solutions to Create Secure, Quick, and Scalable Web Solutions"
+        text: "Use Code Aquariam Solutions to Create Secure, Quick, and Scalable Web Solutions"
       },
       {
         type: "paragraph",
-        text: "Your website is frequently the first and most enduring impression that a brand makes in today's digitally first world. In order to create dependable, scalable, and future-ready websites and web apps that meet your company's objectives, Next Orbit  provides top-notch web development services."
+        text: "Your website is frequently the first and most enduring impression that a brand makes in today's digitally first world. In order to create dependable, scalable, and future-ready websites and web apps that meet your company's objectives, Code Aquariam  provides top-notch web development services."
       },
       {
         type: "paragraph",
@@ -41,7 +41,7 @@ export const servicesData: servicesType[] = [
 
       {
         type: "subheading",
-        text: "Why Choose Next Orbit for Web Development?"
+        text: "Why Choose Code Aquariam for Web Development?"
       },
       {
         type: "paragraph",
@@ -189,7 +189,7 @@ export const servicesData: servicesType[] = [
       },
       {
         type: "subheading",
-        text: "Why Choose Next Orbit for AI Development?"
+        text: "Why Choose Code Aquariam for AI Development?"
       },
       {
         type: "paragraph",
@@ -374,7 +374,7 @@ export const servicesData: servicesType[] = [
     img: thumbThree,
     title: "Digital Marketing Services",
     details:
-      "In modern companies, the existence of a digital presence is no longer mandatory - this is important. The Next Orbit stands out in a busy digital world using the strategic, controlled data from digital marketing services that deliver measurable results. Whether you want to raise brand awareness, attract traffic to your website, improve conversion coefficients, and dominate your research system, create and implement individual marketing strategies developed around your own goals.",
+      "In modern companies, the existence of a digital presence is no longer mandatory - this is important. The Code Aquariam stands out in a busy digital world using the strategic, controlled data from digital marketing services that deliver measurable results. Whether you want to raise brand awareness, attract traffic to your website, improve conversion coefficients, and dominate your research system, create and implement individual marketing strategies developed around your own goals.",
     banner: imgThree,
 
     content: [
@@ -386,7 +386,7 @@ export const servicesData: servicesType[] = [
         type: "mixed-content",
         content: [
           { type: "text", content: "In modern companies, the existence of a digital presence is no longer mandatory - this is important. The " },
-          { type: "bold", content: " Next Orbit " },
+          { type: "bold", content: " Code Aquariam " },
           { type: "text", content: " stands out in a busy digital world using the strategic, controlled data from digital marketing services that deliver measurable results. Whether you want to raise brand awareness, attract traffic to your website, improve conversion coefficients, and dominate your research system, create and implement individual marketing strategies developed around your own goals." }
         ]
       },
@@ -397,7 +397,7 @@ export const servicesData: servicesType[] = [
 
       {
         type: "subheading",
-        text: "Why Choose Next Orbit for Digital Marketing?"
+        text: "Why Choose Code Aquariam for Digital Marketing?"
       },
 
       {
@@ -533,7 +533,7 @@ export const servicesData: servicesType[] = [
         type: "mixed-content",
         content: [
           { type: "text", content: "Digital marketing is more than advertising and publications. It's about telling your story, achieving good people, and attracting real business outcomes. The " },
-          { type: "bold", content: " Next Orbit " },
+          { type: "bold", content: " Code Aquariam " },
           { type: "text", content: " combines strategy, creativity and analysis to develop a digital presence in a critical and measurable way." }
         ]
       },
@@ -559,7 +559,7 @@ export const servicesData: servicesType[] = [
     img: thumbFive,
     title: "DevOps Services",
     details:
-      "Development of modern software requires speed, stability and constant improvements. This is where DevOps understands. The Next Orbit will help businesses embrace the culture of DevOps and implement the tools, automation and practices they need to publish the best software.",
+      "Development of modern software requires speed, stability and constant improvements. This is where DevOps understands. The Code Aquariam will help businesses embrace the culture of DevOps and implement the tools, automation and practices they need to publish the best software.",
     icon: "fas fa-long-arrow-alt-right",
     banner: imgFive,
     content: [
@@ -572,7 +572,7 @@ export const servicesData: servicesType[] = [
         type: "mixed-content",
         content: [
           { type: "text", content: "Development of modern software requires speed, stability and constant improvements. This is where DevOps understands. The " },
-          { type: "bold", content: " Next Orbit " },
+          { type: "bold", content: " Code Aquariam " },
           { type: "text", content: " will help businesses embrace the culture of DevOps and implement the tools, automation and practices they need to publish the best software." }
         ]
       },
@@ -583,12 +583,12 @@ export const servicesData: servicesType[] = [
 
       {
         type: "subheading",
-        text: "Why Choose Next Orbit for DevOps?"
+        text: "Why Choose Code Aquariam for DevOps?"
       },
 
       {
         type: "paragraph",
-        text: "DevOps is not just a set of tools — it’s a mindset. At Next Orbit Solutions, we focus on aligning technology with your business goals. We Build pipelines, create automation and optimize deployment processes while maintaining performance, safety and reliability at the front edge."
+        text: "DevOps is not just a set of tools — it’s a mindset. At Code Aquariam Solutions, we focus on aligning technology with your business goals. We Build pipelines, create automation and optimize deployment processes while maintaining performance, safety and reliability at the front edge."
       },
       {
         type: "paragraph",
@@ -751,7 +751,7 @@ export const servicesData: servicesType[] = [
         content: [
 
           { type: "text", content: "DevOps is not just a tool, but a culture of dexterity, speed and constant improvement. The " },
-          { type: "bold", content: " Next Orbit " },
+          { type: "bold", content: " Code Aquariam " },
           { type: "text", content: " will acquire strategic partners for DevOps and commit to teams to create, test and deliver software more efficiently." }
         ]
       },
@@ -776,7 +776,7 @@ export const servicesData: servicesType[] = [
     img: thumbFour,
     title: "Data Scraping Services",
     details:
-      "The internet is full of valuable data — but accessing it in a clean, structured, and usable format can be a challenge. At Next Orbit Solutions, we offer professional Data Scraping Services that empower businesses to collect and analyze the data they need to gain a competitive edge, make informed decisions, and drive strategic growth.",
+      "The internet is full of valuable data — but accessing it in a clean, structured, and usable format can be a challenge. At Code Aquariam Solutions, we offer professional Data Scraping Services that empower businesses to collect and analyze the data they need to gain a competitive edge, make informed decisions, and drive strategic growth.",
     banner: imgFour,
     content: [
       {
@@ -788,7 +788,7 @@ export const servicesData: servicesType[] = [
         content: [
 
           { type: "text", content: "The internet is full of valuable data — but accessing it in a clean, structured, and usable format can be a challenge. At " },
-          { type: "bold", content: " Next Orbit Solutions, " },
+          { type: "bold", content: " Code Aquariam Solutions, " },
           { type: "text", content: " we offer professional " },
           { type: "bold", content: " Data Scraping Services " },
           { type: "text", content: " that empower businesses to collect and analyze the data they need to gain a competitive edge, make informed decisions, and drive strategic growth." }
@@ -806,13 +806,13 @@ export const servicesData: servicesType[] = [
 
       {
         type: "subheading",
-        text: "Why Choose Next Orbit for Data Scraping?"
+        text: "Why Choose Code Aquariam for Data Scraping?"
       },
       {
         type: "mixed-content",
         content: [
 
-          { type: "text", content: "Not all scraping services are created equal. At Next Orbit, we focus on " },
+          { type: "text", content: "Not all scraping services are created equal. At Code Aquariam, we focus on " },
           { type: "bold", content: " accuracy, scalability, " },
           { type: "text", content: " and " },
           { type: "bold", content: " compliance " },
@@ -987,7 +987,7 @@ export const servicesData: servicesType[] = [
         content: [
 
           { type: "text", content: "In the age of digital information, timely access to accurate data is a competitive advantage. With " },
-          { type: "bold", content: " Next Orbit Solutions, " },
+          { type: "bold", content: " Code Aquariam Solutions, " },
           { type: "text", content: " you get a reliable data scraping partner who values quality, speed, and ethical practices." }
         ]
       },
@@ -1023,7 +1023,7 @@ export const servicesData: servicesType[] = [
     img: thumbTwo,
     title: "UX/UI Strategy Services",
     details:
-      "Design is more than what everything looks like - that's how they work. The Next Orbit provides strategic service users with UX/UI Strategy Services that connect aesthetics and features, ensuring each interaction that makes the user smooth, intuitive and intentionally comprehensive. ",
+      "Design is more than what everything looks like - that's how they work. The Code Aquariam provides strategic service users with UX/UI Strategy Services that connect aesthetics and features, ensuring each interaction that makes the user smooth, intuitive and intentionally comprehensive. ",
     icon: "fas fa-long-arrow-alt-right",
     banner: imgTwo,
 
@@ -1041,7 +1041,7 @@ export const servicesData: servicesType[] = [
         content: [
 
           { type: "text", content: "The " },
-          { type: "bold", content: " Next Orbit " },
+          { type: "bold", content: " Code Aquariam " },
           { type: "text", content: "  provides strategic service users with " },
           { type: "bold", content: " UX/UI Strategy Services " },
           { type: "text", content: " that connect aesthetics and features, ensuring each interaction that makes the user smooth, intuitive and intentionally comprehensive." }
@@ -1075,7 +1075,7 @@ export const servicesData: servicesType[] = [
           { type: "text", content: "Inadequately designed interfaces lead to confusion, abandonment and loss of revenue. Meanwhile, " },
           { type: "bold", content: "UX/UI Strategy Services" },
           { type: "text", content: " confidence, increases conversions, and promotes customer loyalty. The " },
-          { type: "bold", content: "Next Orbit" },
+          { type: "bold", content: "Code Aquariam" },
           { type: "text", content: " helps businesses unlock consistent needs of users using commercial heels through superior design value, research, strategy and creativity." }
         ]
       },
@@ -1083,7 +1083,7 @@ export const servicesData: servicesType[] = [
 
       {
         type: "subheading",
-        text: "Why Choose Next Orbit for UX/UI Strategy?"
+        text: "Why Choose Code Aquariam for UX/UI Strategy?"
       },
       {
         type: "mixed-content",
@@ -1250,7 +1250,7 @@ export const servicesData: servicesType[] = [
         content: [
 
           { type: "text", content: "UX/UI isn’t just about making things look good — it’s about creating digital experiences that work. At " },
-          { type: "bold", content: " Next Orbit, " },
+          { type: "bold", content: " Code Aquariam, " },
           { type: "text", content: " we merge creativity, technology, and psychology to design interfaces that don’t just please the eye but also move the needle." }
         ]
       },
