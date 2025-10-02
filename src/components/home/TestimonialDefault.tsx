@@ -16,21 +16,21 @@ const TestimonialDefault = () => {
     {
       id: 2,
       details:
-        "The data scraping tools developed by Next Orbit have been a game-changer for our analytics team. Their expertise and attention to detail are unmatched.",
+        "The data scraping tools developed by Code Aquariam have been a game-changer for our analytics team. Their expertise and attention to detail are unmatched.",
       name: "– Jane Smith",
       title: "Data Analyst",
     },
     {
       id: 3,
       details:
-        "From design to deployment, Next Orbit made the entire process seamless. Their UX/UI strategy has significantly improved our customer engagement. Thank you!",
+        "From design to deployment, Code Aquariam made the entire process seamless. Their UX/UI strategy has significantly improved our customer engagement. Thank you!",
       name: "– Michael Brown",
       title: "SR. Designer",
     },
     {
       id: 4,
       details:
-        "The AI solutions provided by Next Orbit have helped us automate repetitive tasks and improve decision-making. Their team is knowledgeable, creative, and a pleasure to work with. We look forward to future collaborations!",
+        "The AI solutions provided by Code Aquariam have helped us automate repetitive tasks and improve decision-making. Their team is knowledgeable, creative, and a pleasure to work with. We look forward to future collaborations!",
       name: "– Emily Carter",
       title: "Operations Manager",
     },

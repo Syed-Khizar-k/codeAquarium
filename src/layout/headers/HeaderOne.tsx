@@ -90,7 +90,7 @@ const HeaderOne = () => {
                       alt="flag"
                     /> */}
                     CodeAquariam
-                    {/* <span className="text-capitalize fs-2 fw-normal">next orbit</span>  */}
+                    {/* <span className="text-capitalize fs-2 fw-normal">Code Aquariam</span>  */}
                   </Link>
                 </div>
               </div>

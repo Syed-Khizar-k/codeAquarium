@@ -62,14 +62,14 @@ export default function RootLayout({ children }: childrenType) {
         title:
           "Expert DevOps Services & Leading DevOps Companies Solutions | CodeAquariam",
         description:
-          "Accelerate your business with cutting-edge DevOps technologies, expert consulting, and top-rated DevOps agency solutions for seamless operations. | Next Orbit",
+          "Accelerate your business with cutting-edge DevOps technologies, expert consulting, and top-rated DevOps agency solutions for seamless operations. | Code Aquariam",
       };
     }else if (pathname === "/service-details/5") {
       return {
         title:
           "Professional Web Scraping & Database Scraping Services | CodeAquariam",
         description:
-          "Get reliable website scraping, database extraction, and custom web scraping solutions to power your business with accurate, real-time data. | Next Orbit",
+          "Get reliable website scraping, database extraction, and custom web scraping solutions to power your business with accurate, real-time data. | Code Aquariam",
       };
     }else if (pathname === "/service-details/6") {
       return {
