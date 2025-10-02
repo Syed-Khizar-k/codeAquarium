@@ -25,8 +25,6 @@ export const servicesData: servicesType[] = [
     icon: "fas fa-long-arrow-alt-right",
     banner: imgOne,
     content: [
-
-
       {
         type: "subheading",
         text: "Use Next Orbit Solutions to Create Secure, Quick, and Scalable Web Solutions"

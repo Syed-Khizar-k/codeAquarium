@@ -29,11 +29,11 @@ const FooterOne = () => {
                   </div>
                   <div className="footer-text">
                     <p>
-                      At Next Orbit, we are dedicated to orbiting the future of
+                      At Code Aquariam, we are dedicated to orbiting the future of
                       technology by delivering innovative and scalable
                       solutions. From web development to AI and beyond, we
                       empower businesses to thrive in the digital age. Thank you
-                      for choosing Next Orbit – your partner in innovation and
+                      for choosing Code Aquariam – your partner in innovation and
                       growth.
                     </p>
                   </div>
@@ -155,10 +155,10 @@ const FooterOne = () => {
                       </div>
                       <div className="contact-address-text">
                         <Link
-                          href="tel:+1571477683"
+                          href="tel:+92 (317)-(475)-0491"
                           target="_blank"
                         >
-                          +1 (571) 477‑6832
+                          +92 (317)-(475)-0491
                         </Link>
                       </div>
                     </li>
@@ -168,18 +168,18 @@ const FooterOne = () => {
                       </div>
                       <div className="contact-address-text">
                         <Link href="mailto:info@nextorbitsol.com" target="_blank">
-                        info@nextorbitsol.com
+                        info@codeaquariam.com
                         </Link>
                       </div>
                     </li>
-                    <li>
+                    {/* <li>
                       <div className="contact-address-icon">
                         <i className="fas fa-map-marker-alt"></i>
                       </div>
                       <div className="contact-address-text">
                         <Link href="/">Virginia USA</Link>
                       </div>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

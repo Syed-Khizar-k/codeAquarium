@@ -5,6 +5,7 @@ import OurServices from "./OurServices";
 import ContactSection from "../home-two/ContactSection";
 import Brand from "../home/Brand";
 import CtaTwo from "@/sheardComponent/CtaTwo";
+import Technologies from "./Technologies";
 const ServiceTwoMain = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const ServiceTwoMain = () => {
       </div> */}
       <OurServices />
       {/* <ContactSection /> */}
+      <Technologies/>
       <CtaTwo/>
       <Brand />
     </>

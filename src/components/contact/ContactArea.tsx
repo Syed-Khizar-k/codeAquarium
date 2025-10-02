@@ -5,7 +5,7 @@ const ContactArea = () => {
         <>
            <section className="contact-info-area" >
                     <div className="container">
-                        <div className="row mt-5">
+                        <div className="row mt-5  d-flex align-items-center justify-content-center">
                             <div className="col-xl-4 col-lg-4 col-md-4">
                                 <div className="contact text-center mb-0" style={{ 
                                     // background: "url(assets/img/bg/contact-bg.png)"
