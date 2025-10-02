@@ -2,10 +2,7 @@
 import { servicesData } from "@/data/services-data";
 import { idType, servicesType } from "@/interFace/interFace";
 import Image from "next/image";
-import React from "react";
-import blogTwo from "../../../public/assets/img/blog/blog-2.jpg";
 import ServiceSidebar from "./ServiceSidebar";
-import FaqContent from "@/sheardComponent/elements/FaqContent";
 
 const ServiceDetailsMain = ({ id }: idType) => {
   const service: servicesType | undefined = servicesData.find((item) => item.id === Number(id));
