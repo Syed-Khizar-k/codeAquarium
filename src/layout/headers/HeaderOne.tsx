@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-import logoImg from "../../../public/assets/img/logo/NextOrbit-Logo.png"
+import logoImg from "../../../public/assets/img/logo/logo main.svg"
 import Image from "next/image";
 import TopHeader from "./TopHeader";
 import { usePathname } from "next/navigation";
@@ -89,7 +89,6 @@ const HeaderOne = () => {
                       height={0}
                       alt="flag"
                     />
-                    {/* <span className="text-capitalize fs-2 fw-normal">next orbit</span>  */}
                   </Link>
                 </div>
               </div>

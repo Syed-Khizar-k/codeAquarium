@@ -16,7 +16,7 @@ const About = () => {
                   More than 10+ years we provide <span>IT solutions </span>
                 </h1>
                 <p>
-                  At Next Orbit, we bring over 10 years of expertise in
+                  At Code Aquarium, we bring over 10 years of expertise in
                   delivering innovative IT solutions that drive business
                   success. Our commitment to excellence and customer
                   satisfaction has made us a trusted partner for businesses

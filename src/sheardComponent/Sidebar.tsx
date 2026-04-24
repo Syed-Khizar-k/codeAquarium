@@ -3,7 +3,7 @@ import React from "react";
 import useGlobalContext from "../hooks/use-context";
 import CartIcon from "../sheardComponent/elements/icons/cart-icon";
 import WishlistIcon from "../sheardComponent/elements/icons/wishlist-icon";
-import logo from "../../public/assets/img/logo/logo-2.png";
+import logo from "../../public/assets/img/logo/logo main.svg";
 import Image from "next/image";
 import MobileMenu from "@/layout/headers/MobileMenu";
 
@@ -81,23 +81,10 @@ const Sidebar = () => {
                     <ul>
                       <li className="d-flex align-items-center">
                         <div className="offcanvas__contact-icon mr-15">
-                          <i className="fal fa-map-marker-alt"></i>
-                        </div>
-                        <div className="offcanvas__contact-text">
-                          <Link
-                            target="_blank"
-                            href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
-                          >
-                            12/A, Mirnada City Tower, NYC
-                          </Link>
-                        </div>
-                      </li>
-                      <li className="d-flex align-items-center">
-                        <div className="offcanvas__contact-icon mr-15">
                           <i className="far fa-phone"></i>
                         </div>
                         <div className="offcanvas__contact-text">
-                          <Link href="tel:+088889797697">+088889797697 </Link>
+                          <Link href="tel:+923174750491">+92 3174750491</Link>
                         </div>
                       </li>
                       <li className="d-flex align-items-center">
@@ -105,48 +92,10 @@ const Sidebar = () => {
                           <i className="fal fa-envelope"></i>
                         </div>
                         <div className="offcanvas__contact-text">
-                          <Link href="tel:+012-345-6789">
-                            <span className="mailto:support@mail.com">
-                              support@mail.com{" "}
-                            </span>
+                          <Link href="mailto:abdulrehman@codeaquarium.tech">
+                            <span>abdulrehman@codeaquarium.tech</span>
                           </Link>
                         </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="offcanvas__social">
-                    <ul>
-                      <li>Share:</li>
-                      <li>
-                        <Link href="https://www.facebook.com/" target="_blank">
-                          <i className="fab fa-facebook-f"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="https://twitter.com/?lang=en"
-                          title="Twitter"
-                        >
-                          <i className="fab fa-twitter"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="https://www.linkedin.com/"
-                          title="Linkedin"
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="https://www.instagram.com/"
-                          target="_blank"
-                          title="Instagram"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </Link>
                       </li>
                     </ul>
                   </div>

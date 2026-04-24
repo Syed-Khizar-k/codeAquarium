@@ -9,6 +9,12 @@ import FaqContent from "@/sheardComponent/elements/FaqContent";
 
 const ServiceDetailsMain = ({ id }: idType) => {
   const service: servicesType | undefined = servicesData.find((item) => item.id === Number(id));
+
+  const replaceBrand = (value: string) =>
+    value
+      .replace(/Next Orbit Solutions/gi, "Code Aquarium")
+      .replace(/Next Orbit/gi, "Code Aquarium")
+      .replace(/NextOrbit/gi, "Code Aquarium");
   
   if (!service) {
     return <div>Service not found</div>;
@@ -19,7 +25,7 @@ const ServiceDetailsMain = ({ id }: idType) => {
       <section className="bd-service-details-area pt-75 pb-100">
         <div className="container">
           <div className="row">
-            <h4 className="mb-25">{service.title}</h4>
+            <h4 className="mb-25">{replaceBrand(service.title)}</h4>
             <div className="col-lg-8">
               <div className="bd-service-details mb-50">
                 <div className="bd-service-details-img mb-50">
@@ -39,14 +45,14 @@ const ServiceDetailsMain = ({ id }: idType) => {
                       if (block.type === "paragraph") {
                         return (
                           <p key={blockIndex} className="mb-10">
-                            {block.text}
+                            {replaceBrand(block.text)}
                           </p>
                         );
                       }
                       if (block.type === "subheading") {
                         return (
                           <h5 key={blockIndex} className="mt-20 mb-10 service-subheading">
-                            {block.text}
+                            {replaceBrand(block.text)}
                           </h5>
                         );
                       }
@@ -69,10 +75,10 @@ const ServiceDetailsMain = ({ id }: idType) => {
                                   <div style={{ flex: 1 }}>
                                     {listItem.heading && (
                                       <strong style={{ whiteSpace: 'nowrap', marginRight: '0.5em' }}>
-                                        {listItem.heading}:
+                                        {replaceBrand(listItem.heading)}:
                                       </strong>
                                     )}
-                                    {listItem.text}
+                                    {replaceBrand(listItem.text)}
                                   </div>
                                 </li>
                               ))}
@@ -101,10 +107,10 @@ const ServiceDetailsMain = ({ id }: idType) => {
                                   <div style={{ flex: 1 }}>
                                     {listItem.heading && (
                                       <div>
-                                        <strong>{listItem.heading}:</strong>
+                                        <strong>{replaceBrand(listItem.heading)}:</strong>
                                       </div>
                                     )}
-                                    <div>{listItem.text}</div>
+                                    <div>{replaceBrand(listItem.text)}</div>
                                   </div>
                                 </div>
                               ))}
@@ -141,10 +147,10 @@ if (block.type === "numbered-list-with-bullets") {
               <div style={{ flex: 1 }}>
                 {listItem.heading && (
                   <div>
-                    <strong>{listItem.heading}:</strong>
+                    <strong>{replaceBrand(listItem.heading)}:</strong>
                   </div>
                 )}
-                <div>{listItem.text}</div>
+                <div>{replaceBrand(listItem.text)}</div>
               </div>
             </div>
 
@@ -174,7 +180,7 @@ if (block.type === "numbered-list-with-bullets") {
                       {/* Content with optional heading */}
                       <div style={{ flex: 1 }}>
                         {typeof bulletPoint === 'string' ? (
-                          bulletPoint
+                          replaceBrand(bulletPoint)
                         ) : (
                           <>
                             {bulletPoint.heading && (
@@ -184,10 +190,10 @@ if (block.type === "numbered-list-with-bullets") {
                                   marginRight: '0.5em',
                                 }}
                               >
-                                {bulletPoint.heading}:
+                                {replaceBrand(bulletPoint.heading)}:
                               </strong>
                             )}
-                            {bulletPoint.text}
+                            {replaceBrand(bulletPoint.text)}
                           </>
                         )}
                       </div>
@@ -229,14 +235,14 @@ if (block.type === "numbered-list-with-bullets") {
                               if (item.type === "text") {
                                 return (
                                   <span key={itemIndex} className="mixed-text">
-                                    {item.content}
+                                    {replaceBrand(item.content)}
                                   </span>
                                 );
                               }
                               if (item.type === "bold") {
                                 return (
                                   <strong key={itemIndex} className="mixed-bold">
-                                    {item.content}
+                                    {replaceBrand(item.content)}
                                   </strong>
                                 );
                               }
@@ -250,7 +256,7 @@ if (block.type === "numbered-list-with-bullets") {
                                     className="mixed-link"
                                     style={{ color: 'blue' }}
                                   >
-                                    {item.content}
+                                    {replaceBrand(item.content)}
                                   </a>
                                 );
                               }

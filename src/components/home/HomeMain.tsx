@@ -7,7 +7,6 @@ import Cta from './Cta';
 import Project from './Project';
 import Testimonial from './Testimonial';
 import CounterDefault from './CounterDefault';
-import Video from './Video';
 import Contact from './Contact';
 import BlogGrid from './Blog';
 import Brand from './Brand';
@@ -26,8 +25,6 @@ const HomeMain = () => {
            <CtaTwo/>
            <Project/>
            <Testimonial/>
-           
-           <Video/>
            <Contact/>
            {/* <BlogGrid/> */}
            {/* <Brand/> */}

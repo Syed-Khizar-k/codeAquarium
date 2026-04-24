@@ -53,7 +53,7 @@ const Video = () => {
                   <span className="b-sm-left-1"></span>
                   <span className="b-sm-left-2"></span>
                   <span className="sub-t-left">latest video</span>
-                  <h1 className="text-light">Discover the Future of Technology with Next Orbit</h1>
+                  <h1 className="text-light">Discover the Future of Technology with Code Aquarium</h1>
                   <p>
                     Explore how technology will feel through innovation,
                     expertise and advanced solutions. Our videos outline our

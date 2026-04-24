@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import logoWhite from "../../../public/assets/img/logo/white.png"
+import logoWhite from "../../../public/assets/img/logo/logo main.svg"
 import Image from 'next/image';
-import SocilaLinks from '@/utils/SocilaLinks';
 const FooterTwo = () => {
     return (
         <>
@@ -21,11 +20,7 @@ const FooterTwo = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-6 col-lg-5 mb-30">
-                                <div className="footer-2-icon text-lg-right">
-                                    <SocilaLinks/>
-                                 </div>
-                            </div>
+                            <div className="col-xl-6 col-lg-5 mb-30"></div>
                         </div>
                     </div>
                     <div className="row">
@@ -80,7 +75,7 @@ const FooterTwo = () => {
                                             <i className="fas fa-phone"></i>
                                         </div>
                                         <div className="contact-address-text">
-                                            <h4><Link href="tel:+81234578988" target='_blank'>+812  (345) 778 88</Link></h4>
+                                            <h4><Link href="tel:+923174750491" target='_blank'>+92 3174750491</Link></h4>
                                             
                                         </div>
                                     </li>
@@ -89,15 +84,7 @@ const FooterTwo = () => {
                                             <i className="fas fa-envelope-open"></i>
                                         </div>
                                         <div className="contact-address-text">
-                                            <h4> <Link href="mailto:support@gmail.com" target='_blank'>support@gmail.com</Link> </h4>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="contact-address-icon">
-                                            <i className="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div className="contact-address-text">
-                                            <h4> <Link href="#">227 Marion Street, Columbia</Link> </h4>
+                                            <h4> <Link href="mailto:abdulrehman@codeaquarium.tech" target='_blank'>abdulrehman@codeaquarium.tech</Link> </h4>
                                         </div>
                                     </li>
                                 </ul>

@@ -5,7 +5,7 @@ import TestimonialDefault from "./TestimonialDefault";
 const Testimonial = () => {
   return (
     <>
-      <div className="testimonial-area testimonial pb-100">
+      <div className="testimonial-area testimonial testimonial-home-dark pb-100">
         <div className="container">
           <div className="section-title  mb-75 text-center">
             <span className="b-sm-left-1"></span>

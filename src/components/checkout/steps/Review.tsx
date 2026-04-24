@@ -26,7 +26,6 @@ const Review = () => {
           </div>
           <div className="right_contact">
             <p>Total Amount : ${totalPrice} </p>
-            <p>Address: Dhaka, Mirpur 12</p>
           </div>
         </div>
         <div className="container container-small">
