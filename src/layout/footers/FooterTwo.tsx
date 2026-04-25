@@ -70,15 +70,7 @@ const FooterTwo = () => {
                                         how all this mistaken</p>
                                 </div>
                                 <ul className="contact-link"> 
-                                    <li>
-                                        <div className="contact-address-icon">
-                                            <i className="fas fa-phone"></i>
-                                        </div>
-                                        <div className="contact-address-text">
-                                            <h4><Link href="tel:+923174750491" target='_blank'>+92 3174750491</Link></h4>
-                                            
-                                        </div>
-                                    </li>
+
                                     <li>
                                         <div className="contact-address-icon">
                                             <i className="fas fa-envelope-open"></i>
@@ -97,12 +89,12 @@ const FooterTwo = () => {
                         <div className="row">
                             <div className="col-xl-8 col-lg-8 col-md-8">
                                 <div className="copyright">
-                                    <p><i className="far fa-copyright"></i> Copyright 2023 <Link href="#">Torun</Link>. All rights reserved.</p>
+                                    <p><i className="far fa-copyright"></i> Copyright 2026 <Link href="/">Code Aquarium</Link>. All rights reserved.</p>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-4">
                                 <div className="footer-bottem-text text-md-right">
-                                    <p>Design By <Link href="#">BDevs</Link></p>
+                                    <p>Design By <Link href="/">Code Aquarium</Link></p>
                                 </div>
                             </div>
                         </div>

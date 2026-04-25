@@ -11,7 +11,7 @@ const FooterBottom = () => {
               <div className="col-xl-8 col-lg-8 col-md-8">
                 <div className="copyright">
                   <p>
-                    <i className="far fa-copyright"></i> Copyright 2025 Code
+                    <i className="far fa-copyright"></i> Copyright 2026 Code
                     Aquarium. All rights reserved.
                   </p>
                 </div>

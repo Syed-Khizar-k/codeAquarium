@@ -23,14 +23,7 @@ const Cta = () => {
                       join us <i className="fas fa-long-arrow-alt-right"></i>
                     </span>
                   </Link>
-                <Link
-                  className="cta-link"
-                  href="tel:+923174750491"
-                  target="_blank"
-                >
-                  <i className="fa-sharp fa-solid fa-phone ms-2"></i> +92
-                  3174750491
-                </Link>
+
               </div>
             </div>
           </div>

@@ -38,20 +38,6 @@ const SingleTeam = ({filterData}:propsType) => {
                     teachings of the great explorer of the truth master-builder
                     of human happiness one rejects
                   </p>
-                  <div className="team-single">
-                    <div className="single-team-info">
-                      <div className="single-team-icon">
-                        <Image
-                          style={{ width: "100%", height: "auto" }}
-                          src={iconOne}
-                          alt="icon-user"
-                        />
-                      </div>
-                      <div className="team-info">
-                        <span>Call For Me</span>
-                        <h4> <Link href="tel:+923174750491">+92 3174750491</Link> </h4>
-                      </div>
-                    </div>
                     <div className="single-team-info">
                       <div className="single-team-icon">
                         <Image
@@ -65,20 +51,6 @@ const SingleTeam = ({filterData}:propsType) => {
                         <h4> <Link  href="mailto:abdulrehman@codeaquarium.tech">abdulrehman@codeaquarium.tech</Link> </h4>
                       </div>
                     </div>
-                    <div className="single-team-info">
-                      <div className="single-team-icon">
-                        <Image
-                          style={{ width: "100%", height: "auto" }}
-                          src={iconThree}
-                          alt="icon-user"
-                        />
-                      </div>
-                      <div className="team-info">
-                        <span>Fax Me</span>
-                        <h4> <Link href="tel:+923174750491">+92 3174750491</Link> </h4>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

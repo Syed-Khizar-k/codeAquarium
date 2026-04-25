@@ -76,7 +76,7 @@ const HeaderOne = () => {
   return (
     <>
       <header id="header-wrap">
-        {pathName !== "/home-2" && <TopHeader />}
+        {/* {pathName !== "/home-2" && <TopHeader />} */}
         <div id="sticky-header" className="main-menu-area">
           <div className="container">
             <div className="row align-items-center">

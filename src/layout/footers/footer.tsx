@@ -11,7 +11,7 @@ const FooterOne = () => {
   return (
     <>
       <footer>
-        <div className="footer-area grey-bg pt-80 pb-30">
+        <div className="footer-area pt-80 pb-30">
           <div className="container">
             <div className="row">
               <div className="col-xl-3 col-lg-3 col-md-4">
@@ -145,19 +145,7 @@ const FooterOne = () => {
                     </p>
                   </div>
                   <ul className="contact-link">
-                    <li>
-                      <div className="contact-address-icon">
-                        <i className="fas fa-phone"></i>
-                      </div>
-                      <div className="contact-address-text">
-                        <Link
-                          href="tel:+923174750491"
-                          target="_blank"
-                        >
-                          +92 3174750491
-                        </Link>
-                      </div>
-                    </li>
+
                     <li>
                       <div className="contact-address-icon">
                         <i className="fas fa-envelope-open"></i>

@@ -79,14 +79,7 @@ const Sidebar = () => {
                   <div className="offcanvas__contact mt-30 mb-20">
                     <h4>Contact Info</h4>
                     <ul>
-                      <li className="d-flex align-items-center">
-                        <div className="offcanvas__contact-icon mr-15">
-                          <i className="far fa-phone"></i>
-                        </div>
-                        <div className="offcanvas__contact-text">
-                          <Link href="tel:+923174750491">+92 3174750491</Link>
-                        </div>
-                      </li>
+
                       <li className="d-flex align-items-center">
                         <div className="offcanvas__contact-icon mr-15">
                           <i className="fal fa-envelope"></i>
