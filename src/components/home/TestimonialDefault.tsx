@@ -9,37 +9,37 @@ const TestimonialDefault = () => {
     {
       id: 1,
       details:
-        "Next Orbit transformed our business with their innovative web development solutions.Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
-      name: "– John Doe,",
+        "Code Aquarium transformed our business with their innovative web development solutions.Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
+      name: "– Abdul Rehman",
       title: "CEO",
     },
     {
       id: 2,
       details:
-        "The data scraping tools developed by Next Orbit have been a game-changer for our analytics team. Their expertise and attention to detail are unmatched.",
-      name: "– Jane Smith",
-      title: "Data Analyst",
+        "The data scraping tools developed by Code Aquarium have been a game-changer for our analytics team. Their expertise and attention to detail are unmatched.",
+      name: "– Syed Khizar",
+      title: "Director",
     },
     {
       id: 3,
       details:
-        "From design to deployment, Next Orbit made the entire process seamless. Their UX/UI strategy has significantly improved our customer engagement. Thank you!",
-      name: "– Michael Brown",
-      title: "SR. Designer",
+        "From design to deployment, Code Aquarium made the entire process seamless. Their UX/UI strategy has significantly improved our customer engagement. Thank you!",
+      name: "– Hassan Shami",
+      title: "Data Analyst",
     },
     {
       id: 4,
       details:
-        "The AI solutions provided by Next Orbit have helped us automate repetitive tasks and improve decision-making. Their team is knowledgeable, creative, and a pleasure to work with. We look forward to future collaborations!",
-      name: "– Emily Carter",
-      title: "Operations Manager",
+        "The AI solutions provided by Code Aquarium have helped us automate repetitive tasks and improve decision-making. Their team is knowledgeable, creative, and a pleasure to work with. We look forward to future collaborations!",
+      name: "– Sufwan Masood",
+      title: "Developer",
     },
 
     {
       id: 5,
       details:
         "Your team members are very professional with their work ethic, communication and skills. They always answered questions promptly. Had suggestions for improvement. Followed directions well. They speaks fluent English and understands everything we ask for. They all are very competent in their coding skills and goes above and beyond to achieve the best results. I will hire again. Thank you for your hard work.",
-        name:"John Snow",
+        name:"Arham Ali",
         title: "Web Developer",
     },
   ];

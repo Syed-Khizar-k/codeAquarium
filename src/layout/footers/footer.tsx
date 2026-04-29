@@ -1,18 +1,17 @@
 import Link from "next/link";
 import React from "react";
-import footerImg from "../../../public//assets/img/logo/NextOrbit-Logo.png";
+import footerImg from "../../../public/assets/img/logo/codeaqua.png";
 import imgOne from "../../../public/assets/img/footer/01.jpg";
 import imgTow from "../../../public/assets/img/footer/02.jpg";
 import Image from "next/image";
 import FooterBottom from "./FooterBottom";
-import SocilaLinks from "@/utils/SocilaLinks";
 import { serviceDataTwo } from "@/data/service-data-two";
 
 const FooterOne = () => {
   return (
     <>
       <footer>
-        <div className="footer-area grey-bg pt-80 pb-30">
+        <div className="footer-area pt-80 pb-30">
           <div className="container">
             <div className="row">
               <div className="col-xl-3 col-lg-3 col-md-4">
@@ -29,16 +28,13 @@ const FooterOne = () => {
                   </div>
                   <div className="footer-text">
                     <p>
-                      At Next Orbit, we are dedicated to orbiting the future of
+                      At Code Aquarium, we are dedicated to orbiting the future of
                       technology by delivering innovative and scalable
                       solutions. From web development to AI and beyond, we
                       empower businesses to thrive in the digital age. Thank you
-                      for choosing Next Orbit – your partner in innovation and
+                      for choosing Code Aquarium - your partner in innovation and
                       growth.
                     </p>
-                  </div>
-                  <div className="footer-icon">
-                    <SocilaLinks />
                   </div>
                 </div>
               </div>
@@ -149,35 +145,15 @@ const FooterOne = () => {
                     </p>
                   </div>
                   <ul className="contact-link">
-                    <li>
-                      <div className="contact-address-icon">
-                        <i className="fas fa-phone"></i>
-                      </div>
-                      <div className="contact-address-text">
-                        <Link
-                          href="tel:+1571477683"
-                          target="_blank"
-                        >
-                          +1 (571) 477‑6832
-                        </Link>
-                      </div>
-                    </li>
+
                     <li>
                       <div className="contact-address-icon">
                         <i className="fas fa-envelope-open"></i>
                       </div>
                       <div className="contact-address-text">
-                        <Link href="mailto:info@nextorbitsol.com" target="_blank">
-                        info@nextorbitsol.com
+                        <Link href="mailto:abdulrehman@codeaquarium.tech" target="_blank">
+                        abdulrehman@codeaquarium.tech
                         </Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="contact-address-icon">
-                        <i className="fas fa-map-marker-alt"></i>
-                      </div>
-                      <div className="contact-address-text">
-                        <Link href="/">Virginia USA</Link>
                       </div>
                     </li>
                   </ul>

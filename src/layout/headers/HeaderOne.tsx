@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-import logoImg from "../../../public/assets/img/logo/NextOrbit-Logo.png"
+import logoImg from "../../../public/assets/img/logo/codeaqua.png"
 import Image from "next/image";
 import TopHeader from "./TopHeader";
 import { usePathname } from "next/navigation";
@@ -76,7 +76,7 @@ const HeaderOne = () => {
   return (
     <>
       <header id="header-wrap">
-        {pathName !== "/home-2" && <TopHeader />}
+        {/* {pathName !== "/home-2" && <TopHeader />} */}
         <div id="sticky-header" className="main-menu-area">
           <div className="container">
             <div className="row align-items-center">
@@ -89,7 +89,6 @@ const HeaderOne = () => {
                       height={0}
                       alt="flag"
                     />
-                    {/* <span className="text-capitalize fs-2 fw-normal">next orbit</span>  */}
                   </Link>
                 </div>
               </div>

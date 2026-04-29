@@ -32,20 +32,6 @@ const FullTeam = () => {
                   <div className="team-text">
                     <h4> <Link className="team-title" href={`/team-details/${item.id}`}> {item.name} </Link> </h4>
                     <span> {item.title} </span>
-                    <div className="team-icon">
-                      <Link href="https://www.facebook.com/">
-                        <i className={item.facebook}></i>
-                      </Link>
-                      <Link href="https://twitter.com/">
-                        <i className={item.twitter}></i>
-                      </Link>
-                      <Link href="https://www.instagram.com/">
-                        <i className={item.instagram}></i>
-                      </Link>
-                      <Link href="https://www.youtube.com/">
-                        <i className={item.youtube}></i>
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap");
 @import "../../public/assets/css/font-awesome-pro.css";
 @import "../../public/assets/scss/bootstrap-variables";
 // @import "../../public/assets/css/flaticon.css";
@@ -25,4 +26,623 @@
   color: $theme-light !important;
   font-weight: bold;
   text-decoration: underline;
+}
+
+/* Global dark theme overrides */
+:root {
+  --dark-bg: #0b0b0d;
+  --dark-surface: #141419;
+  --dark-surface-soft: #1b1b22;
+  --dark-border: #2b2b35;
+  --dark-text: #e8e8ee;
+  --dark-text-soft: #b5b5bf;
+  --dark-accent: #7b1118;
+}
+
+html,
+body {
+  background: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
+}
+
+body,
+p,
+span,
+li,
+label,
+small,
+.form-label,
+.copyright p,
+.footer-bottem-text p,
+.team-info > span,
+.contact-address-text h4 {
+  color: var(--dark-text-soft) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title > span,
+.section-title h1,
+.blog-text h3 > a,
+.single-team-text > span,
+.price-count h1,
+.pricing-top-text h3 {
+  color: var(--dark-text) !important;
+}
+
+.white-bg,
+.grey-bg,
+.grey-bg-2,
+.footer-bg-bottom,
+.footer-news,
+.blog-meta,
+.client-say-text,
+.pricing-menu,
+.contact,
+.appointment-wrapper,
+.single-team-wrapper,
+.table-content,
+.offcanvas__wrapper,
+.bd-sidebar__widget,
+.sidebar__widget,
+.widget,
+.accordion-item,
+.cart-wrapper,
+.checkout-area,
+.newsletter-bg {
+  background: var(--dark-surface) !important;
+  border-color: var(--dark-border) !important;
+  box-shadow: none !important;
+}
+
+.sticky,
+.header-transparent .sticky,
+.header-top-area,
+.header-area,
+.menu-2.sticky {
+  background: #101016 !important;
+}
+
+.footer-area,
+.footer-2-bottom,
+.contact-bg,
+.theme-bg,
+.black-bg {
+  background: #0f0f14 !important;
+}
+
+a,
+.fotter-menu a,
+.header-info span,
+.header-icon a,
+.contact-link a,
+.footer-2-wrapper .fotter-menu a,
+.blog-button,
+.pricings-button,
+.services-button {
+  color: var(--dark-text) !important;
+}
+
+a:hover,
+.fotter-menu a:hover,
+.header-icon a:hover,
+.contact-link a:hover,
+.footer-2-wrapper .fotter-menu a:hover,
+.blog-text h3 > a:hover,
+.blog-button:hover,
+.pricings-button:hover,
+.services-button:hover {
+  color: #ffffff !important;
+}
+
+.btn,
+.blog-text > a,
+.pricing-button a,
+.services-text a,
+.border-btn {
+  background: var(--dark-accent) !important;
+  border-color: var(--dark-accent) !important;
+  color: #ffffff !important;
+}
+
+.btn .btn-text,
+.blog-button,
+.pricings-button,
+.services-button {
+  color: #ffffff !important;
+}
+
+input,
+textarea,
+select,
+.form-control,
+.form-select,
+.nice-select,
+#contact-form input,
+#contact-form textarea {
+  background: var(--dark-surface-soft) !important;
+  color: var(--dark-text) !important;
+  border-color: var(--dark-border) !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+.form-control::placeholder {
+  color: #8f8f9b !important;
+}
+
+table,
+table th,
+table td,
+.table > :not(caption) > * > * {
+  background: transparent !important;
+  color: var(--dark-text) !important;
+  border-color: var(--dark-border) !important;
+}
+
+.offcanvas-overlay {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+#scrollUp {
+  background: var(--dark-accent) !important;
+}
+
+/* Futuristic enhancement layer */
+html,
+body {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(123, 17, 24, 0.25), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(84, 124, 255, 0.2), transparent 35%),
+    #09090c !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(140, 170, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(140, 170, 255, 0.14) 1px, transparent 1px);
+  background-size: 34px 34px;
+  animation: gridShift 28s linear infinite;
+  z-index: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 45vw;
+  height: 45vw;
+  right: -12vw;
+  top: -12vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(123, 17, 24, 0.35), transparent 62%);
+  filter: blur(22px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title > span {
+  font-family: "Orbitron", sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+.header-area,
+.header-top-area,
+.sticky,
+.footer-area,
+.footer-2-bottom,
+.contact,
+.blog-meta,
+.pricing-menu,
+.client-say-text,
+.appointment-wrapper,
+.offcanvas__wrapper,
+.newsletter-bg,
+.table-content,
+.single-team-wrapper,
+.widget,
+.sidebar__widget {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(142, 167, 255, 0.12) !important;
+  box-shadow: 0 0 0 1px rgba(123, 17, 24, 0.15), 0 12px 35px rgba(0, 0, 0, 0.45) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.btn,
+.border-btn,
+.blog-text > a,
+.pricing-button a,
+.services-text a {
+  background: linear-gradient(90deg, #5f0c12 0%, #7b1118 45%, #8e2330 100%) !important;
+  border-color: #9a3140 !important;
+  box-shadow: 0 0 16px rgba(154, 49, 64, 0.45);
+}
+
+.btn:hover,
+.border-btn:hover,
+.blog-text > a:hover,
+.pricing-button a:hover,
+.services-text a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px rgba(165, 74, 89, 0.55);
+}
+
+.section-title > span,
+.theme-color,
+.active-link,
+.footer-title,
+.contact-icon span,
+.header-info span i {
+  color: #9ec0ff !important;
+  text-shadow: 0 0 10px rgba(158, 192, 255, 0.45);
+}
+
+input,
+textarea,
+select,
+.form-control,
+.form-select,
+.nice-select {
+  border: 1px solid rgba(158, 192, 255, 0.2) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(123, 17, 24, 0.35) !important;
+  border-color: rgba(158, 192, 255, 0.55) !important;
+}
+
+@keyframes gridShift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(34px, 34px, 0);
+  }
+}
+
+/* Surface contrast rules */
+.white-bg,
+.grey-bg,
+.grey-bg-2,
+.bg-white,
+.white-bg *,
+.grey-bg *,
+.grey-bg-2 *,
+.bg-white * {
+  color: #ffffff !important;
+}
+
+.services-wrapper,
+.our-services-wrapper,
+.client-say-text,
+.testimonial-wrapper,
+.single-testimonial,
+.blog-meta,
+.pricing-menu,
+.contact,
+.appointment-wrapper,
+.single-team-wrapper {
+  color: #ffffff !important;
+}
+
+.services-wrapper h1,
+.services-wrapper h2,
+.services-wrapper h3,
+.services-wrapper h4,
+.services-wrapper h5,
+.services-wrapper h6,
+.services-wrapper p,
+.services-wrapper span,
+.services-wrapper a,
+.our-services-wrapper h1,
+.our-services-wrapper h2,
+.our-services-wrapper h3,
+.our-services-wrapper h4,
+.our-services-wrapper h5,
+.our-services-wrapper h6,
+.our-services-wrapper p,
+.our-services-wrapper span,
+.our-services-wrapper a,
+.client-say-text h1,
+.client-say-text h2,
+.client-say-text h3,
+.client-say-text h4,
+.client-say-text h5,
+.client-say-text h6,
+.client-say-text p,
+.client-say-text span,
+.client-say-text a,
+.testimonial-wrapper h1,
+.testimonial-wrapper h2,
+.testimonial-wrapper h3,
+.testimonial-wrapper h4,
+.testimonial-wrapper h5,
+.testimonial-wrapper h6,
+.testimonial-wrapper p,
+.testimonial-wrapper span,
+.testimonial-wrapper a,
+.single-testimonial h1,
+.single-testimonial h2,
+.single-testimonial h3,
+.single-testimonial h4,
+.single-testimonial h5,
+.single-testimonial h6,
+.single-testimonial p,
+.single-testimonial span,
+.single-testimonial a,
+.blog-meta h1,
+.blog-meta h2,
+.blog-meta h3,
+.blog-meta h4,
+.blog-meta h5,
+.blog-meta h6,
+.blog-meta p,
+.blog-meta span,
+.blog-meta a,
+.pricing-menu h1,
+.pricing-menu h2,
+.pricing-menu h3,
+.pricing-menu h4,
+.pricing-menu h5,
+.pricing-menu h6,
+.pricing-menu p,
+.pricing-menu span,
+.pricing-menu a,
+.single-team-wrapper h1,
+.single-team-wrapper h2,
+.single-team-wrapper h3,
+.single-team-wrapper h4,
+.single-team-wrapper h5,
+.single-team-wrapper h6,
+.single-team-wrapper p,
+.single-team-wrapper span,
+.single-team-wrapper a {
+  color: #ffffff !important;
+}
+
+.services-wrapper .services-button,
+.our-services-wrapper .services-button,
+.single-services .services-button,
+.service-card .services-button,
+.blog-meta .blog-button,
+.pricing-menu .pricings-button,
+.client-say-text .btn-text,
+.testimonial-wrapper .btn-text,
+.single-testimonial .btn-text,
+.blog-meta .btn-text,
+.pricing-menu .btn-text,
+.single-team-wrapper .btn-text,
+.services-wrapper .btn-text,
+.our-services-wrapper .btn-text,
+.services-wrapper .services-button *,
+.our-services-wrapper .services-button *,
+.single-services .services-button *,
+.blog-meta .blog-button *,
+.pricing-menu .pricings-button *,
+.client-say-text .btn-text *,
+.testimonial-wrapper .btn-text *,
+.single-testimonial .btn-text *,
+.blog-meta .btn-text *,
+.pricing-menu .btn-text *,
+.single-team-wrapper .btn-text *,
+.services-wrapper .btn-text *,
+.our-services-wrapper .btn-text * {
+  color: #ffffff !important;
+}
+
+.testimonial-home-dark {
+  background: #2a2a2e !important;
+}
+
+.testimonial-home-dark .section-title,
+.testimonial-home-dark .section-title > span,
+.testimonial-home-dark .section-title h1,
+.testimonial-home-dark .section-title p,
+.testimonial-home-dark .testimonial-text p,
+.testimonial-home-dark .testimonial-text h4,
+.testimonial-home-dark .testimonial-text span,
+.testimonial-home-dark .testimonial-wrapper,
+.testimonial-home-dark .testimonial-wrapper p,
+.testimonial-home-dark .testimonial-wrapper h4,
+.testimonial-home-dark .testimonial-wrapper span,
+.testimonial-home-dark .testimonial-wrapper::before {
+  color: #ffffff !important;
+}
+
+.testimonial-home-dark .b-sm-left-1,
+.testimonial-home-dark .b-sm-left-2 {
+  background: #ffffff !important;
+}
+
+.testimonial-home-dark .arrow-button {
+  background: #a61e2a !important;
+  color: #ffffff !important;
+  border: 1px solid #c83a46 !important;
+}
+
+.testimonial-home-dark .arrow-button:hover {
+  background: #c22e3b !important;
+  color: #ffffff !important;
+}
+
+.white-bg a,
+.grey-bg a,
+.grey-bg-2 a,
+.bg-white a,
+.white-bg p,
+.grey-bg p,
+.grey-bg-2 p,
+.bg-white p,
+.white-bg li,
+.grey-bg li,
+.grey-bg-2 li,
+.bg-white li,
+.white-bg span,
+.grey-bg span,
+.grey-bg-2 span,
+.bg-white span,
+.white-bg h1,
+.grey-bg h1,
+.grey-bg-2 h1,
+.bg-white h1,
+.white-bg h2,
+.grey-bg h2,
+.grey-bg-2 h2,
+.bg-white h2,
+.white-bg h3,
+.grey-bg h3,
+.grey-bg-2 h3,
+.bg-white h3,
+.white-bg h4,
+.grey-bg h4,
+.grey-bg-2 h4,
+.bg-white h4,
+.white-bg h5,
+.grey-bg h5,
+.grey-bg-2 h5,
+.bg-white h5,
+.white-bg h6,
+.grey-bg h6,
+.grey-bg-2 h6,
+.bg-white h6 {
+  color: #ffffff !important;
+}
+
+.black-bg,
+.theme-bg,
+.footer-bg,
+.footer-area,
+.footer-2-bottom,
+.contact-bg,
+.header-area,
+.header-top-area,
+.sticky,
+.menu-2.sticky,
+.black-bg *,
+.theme-bg *,
+.footer-bg *,
+.footer-area *,
+.footer-2-bottom *,
+.contact-bg *,
+.header-area *,
+.header-top-area *,
+.sticky *,
+.menu-2.sticky * {
+  color: #ffffff !important;
+}
+
+.black-bg a,
+.theme-bg a,
+.footer-bg a,
+.footer-area a,
+.footer-2-bottom a,
+.contact-bg a,
+.header-area a,
+.header-top-area a,
+.sticky a,
+.menu-2.sticky a,
+.black-bg p,
+.theme-bg p,
+.footer-bg p,
+.footer-area p,
+.footer-2-bottom p,
+.contact-bg p,
+.header-area p,
+.header-top-area p,
+.sticky p,
+.menu-2.sticky p,
+.black-bg span,
+.theme-bg span,
+.footer-bg span,
+.footer-area span,
+.footer-2-bottom span,
+.contact-bg span,
+.header-area span,
+.header-top-area span,
+.sticky span,
+.menu-2.sticky span {
+  color: #ffffff !important;
+}
+
+/* Service cards (home "What we do" + /service-* pages) have a white background,
+   so force readable dark text. Must come after the wrapper white-text rules above
+   to win the cascade. */
+.services-area .services-wrapper,
+.services-area .services-wrapper .services-text,
+.services-area .services-wrapper .services-text h1,
+.services-area .services-wrapper .services-text h2,
+.services-area .services-wrapper .services-text h3,
+.services-area .services-wrapper .services-text h4,
+.services-area .services-wrapper .services-text h5,
+.services-area .services-wrapper .services-text h6,
+.services-area .services-wrapper .services-text p,
+.services-area .services-wrapper .services-text span:not(.services-button),
+.our-services-area .our-services-wrapper,
+.our-services-area .our-services-wrapper .our-services-text,
+.our-services-area .our-services-wrapper .our-services-text h1,
+.our-services-area .our-services-wrapper .our-services-text h2,
+.our-services-area .our-services-wrapper .our-services-text h3,
+.our-services-area .our-services-wrapper .our-services-text h4,
+.our-services-area .our-services-wrapper .our-services-text h5,
+.our-services-area .our-services-wrapper .our-services-text h6,
+.our-services-area .our-services-wrapper .our-services-text p,
+.our-services-area .our-services-wrapper .our-services-text span {
+  color: #0b0b0d !important;
+}
+
+/* Keep the "view more" link in /service-2 cards readable as a link, not body text. */
+.our-services-area .our-services-wrapper .our-services-text a {
+  color: #7b1118 !important;
+}
+.our-services-area .our-services-wrapper .our-services-text a:hover {
+  color: #9a3140 !important;
+}
+
+/* About page "Why choose us" sits on .choose-bg (white). The global dark theme above
+   forces headings/paragraphs to light text and accordion-items to a dark surface,
+   which makes copy invisible on the white card. Scope dark text back inside .choose-bg. */
+.choose-bg,
+.choose-bg .section-title h1,
+.choose-bg .section-title h2,
+.choose-bg .section-title h3,
+.choose-bg .section-title h4,
+.choose-bg .section-title h5,
+.choose-bg .section-title h6,
+.choose-bg .section-title p,
+.choose-bg .accordion-body,
+.choose-bg .accordion-body p,
+.choose-bg .accordion-button-custome {
+  color: #0b0b0d !important;
+}
+
+.choose-bg .accordion-item {
+  background: transparent !important;
+  border-color: #e6e6e6 !important;
+  box-shadow: none !important;
 }

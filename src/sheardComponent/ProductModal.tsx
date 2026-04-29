@@ -209,45 +209,6 @@ const ProductModal = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="bd__social-media">
-                            <ul>
-                              <li>Share:</li>
-                              <li>
-                                <Link
-                                  href="https://www.facebook.com/"
-                                  target="_blank"
-                                >
-                                  <i className="fab fa-facebook-f"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="https://twitter.com/?lang=en"
-                                  title="Twitter"
-                                >
-                                  <i className="fab fa-twitter"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="https://www.linkedin.com/"
-                                  title="Linkedin"
-                                  target="_blank"
-                                >
-                                  <i className="fab fa-linkedin"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="https://www.instagram.com/"
-                                  target="_blank"
-                                  title="Instagram"
-                                >
-                                  <i className="fab fa-instagram"></i>
-                                </Link>
-                              </li>
-                            </ul>
-                          </div>
                           <div className="bd__safe-checkout">
                             <h5>Guaranteed Safe Checkout</h5>
                             <Link href="#">
