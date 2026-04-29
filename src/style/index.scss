@@ -589,3 +589,60 @@ select:focus,
 .menu-2.sticky span {
   color: #ffffff !important;
 }
+
+/* Service cards (home "What we do" + /service-* pages) have a white background,
+   so force readable dark text. Must come after the wrapper white-text rules above
+   to win the cascade. */
+.services-area .services-wrapper,
+.services-area .services-wrapper .services-text,
+.services-area .services-wrapper .services-text h1,
+.services-area .services-wrapper .services-text h2,
+.services-area .services-wrapper .services-text h3,
+.services-area .services-wrapper .services-text h4,
+.services-area .services-wrapper .services-text h5,
+.services-area .services-wrapper .services-text h6,
+.services-area .services-wrapper .services-text p,
+.services-area .services-wrapper .services-text span:not(.services-button),
+.our-services-area .our-services-wrapper,
+.our-services-area .our-services-wrapper .our-services-text,
+.our-services-area .our-services-wrapper .our-services-text h1,
+.our-services-area .our-services-wrapper .our-services-text h2,
+.our-services-area .our-services-wrapper .our-services-text h3,
+.our-services-area .our-services-wrapper .our-services-text h4,
+.our-services-area .our-services-wrapper .our-services-text h5,
+.our-services-area .our-services-wrapper .our-services-text h6,
+.our-services-area .our-services-wrapper .our-services-text p,
+.our-services-area .our-services-wrapper .our-services-text span {
+  color: #0b0b0d !important;
+}
+
+/* Keep the "view more" link in /service-2 cards readable as a link, not body text. */
+.our-services-area .our-services-wrapper .our-services-text a {
+  color: #7b1118 !important;
+}
+.our-services-area .our-services-wrapper .our-services-text a:hover {
+  color: #9a3140 !important;
+}
+
+/* About page "Why choose us" sits on .choose-bg (white). The global dark theme above
+   forces headings/paragraphs to light text and accordion-items to a dark surface,
+   which makes copy invisible on the white card. Scope dark text back inside .choose-bg. */
+.choose-bg,
+.choose-bg .section-title h1,
+.choose-bg .section-title h2,
+.choose-bg .section-title h3,
+.choose-bg .section-title h4,
+.choose-bg .section-title h5,
+.choose-bg .section-title h6,
+.choose-bg .section-title p,
+.choose-bg .accordion-body,
+.choose-bg .accordion-body p,
+.choose-bg .accordion-button-custome {
+  color: #0b0b0d !important;
+}
+
+.choose-bg .accordion-item {
+  background: transparent !important;
+  border-color: #e6e6e6 !important;
+  box-shadow: none !important;
+}

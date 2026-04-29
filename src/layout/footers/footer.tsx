@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import footerImg from "../../../public/assets/img/logo/logo main.svg";
+import footerImg from "../../../public/assets/img/logo/codeaqua.png";
 import imgOne from "../../../public/assets/img/footer/01.jpg";
 import imgTow from "../../../public/assets/img/footer/02.jpg";
 import Image from "next/image";

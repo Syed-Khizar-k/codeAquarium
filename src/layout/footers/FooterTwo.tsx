@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import logoWhite from "../../../public/assets/img/logo/logo main.svg"
+import logoWhite from "../../../public/assets/img/logo/codeaqua.png"
 import Image from 'next/image';
 const FooterTwo = () => {
     return (

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-import logoImg from "../../../public/assets/img/logo/logo main.svg"
+import logoImg from "../../../public/assets/img/logo/codeaqua.png"
 import Image from "next/image";
 import TopHeader from "./TopHeader";
 import { usePathname } from "next/navigation";
