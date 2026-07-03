@@ -1,214 +1,106 @@
 "use client";
-import { contact_schema } from "@/utils/validation-schema";
-import React from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { toast } from "react-toastify";
-import axios from "axios";
 
-const contactSchema = Yup.object().shape({
-  name: Yup.string().min(3, "Too short!").required("Name is required"),
-  email: Yup.string()
-    .email("Must be a valid email")
-    .required("Email is required"),
-  subject: Yup.string().required("Subject is required"),
-  message: Yup.string()
-    .min(10, "Message should be at least 10 characters")
-    .required("Message is required"),
-});
+import { useState } from "react";
+import { Send, CheckCircle2 } from "lucide-react";
+import { services } from "@/lib/services";
 
-const ContactForm = () => { 
-  
+export default function ContactForm() {
+  const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
-    validationSchema: contactSchema,
-    // onSubmit: (values, { resetForm }) => {
-    //   console.log("Submitted Values:", values);
-    //   alert("Message Sent Successfully!");
-    //   resetForm();
-    // },
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    // No backend wired yet — simulate a successful submission.
+    // Swap this for a POST to your API / form provider when ready.
+    setTimeout(() => {
+      setSubmitting(false);
+      setSent(true);
+    }, 700);
+  };
 
-    onSubmit: async (values, { resetForm }) => {
-      try {
-        // Fetch the CSRF token
-        const tokenResponse = await axios.get(
-          "https://nextorbit-drupal.asdev.tech/session/token"
-        );
-        const csrfToken = tokenResponse.data;
+  if (sent) {
+    return (
+      <div className="card-surface p-10 text-center">
+        <span className="inline-grid place-items-center rounded-full p-4 bg-reef/15 text-reef">
+          <CheckCircle2 className="h-9 w-9" />
+        </span>
+        <h3 className="mt-5 text-2xl font-bold">Message received!</h3>
+        <p className="mt-2 text-slatey">
+          Thanks for reaching out. A member of our team will be in touch within one business day.
+        </p>
+      </div>
+    );
+  }
 
-        // Headers for request
-        const headers = {
-          "Content-Type": "application/json",
-          "X-CSRF-Token": csrfToken,
-        };
-
-        // Send the request
-        const response = await axios.post(
-          "https://nextorbit-drupal.asdev.tech/api/create_pages",
-          values,
-          { headers }
-        );
-
-        console.log("Response:", response.data);
-        toast.success("Message Sent Successfully! 🚀", {
-          position: "top-right",
-          autoClose: 3000, // Close after 3 seconds
-        });
-        resetForm();
-      } catch (error) {
-        if (error instanceof Error) {
-          console.error("Error:", error.message);
-          alert("Failed to send the message. Please try again.");
-        } else {
-          toast.error("Unexpected error occurred!", {
-            position: "top-right",
-            autoClose: 3000,
-          });
-  
-        }
-      }
-    },
-
-  });
-
-
-
-
+  const field =
+    "w-full border border-slate-300 px-4 py-3 focus:outline-none focus:border-ocean-600 focus:ring-1 focus:ring-ocean-600 transition-colors";
+  const label = "text-sm font-semibold text-ink";
 
   return (
-    <>
-      <div className="contact-2-area pt-100 pb-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
-              <div className="section-title text-center ml-50 mr-50 mb-75">
-                <span className="border-left-1"></span>
-                <span>contact us</span>
-                <span className="border-right-1"></span>
-                <h1>{`Don't`} Hesitate To Contact Us</h1>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-12">
-            <div className="appointment-wrapper contact-form-page">
-              <form id="appointment-form" onSubmit={formik.handleSubmit}>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className="form-box user-icon mb-30">
-                      <input
-                        type="text"
-                        name="name"
-                        value={formik.values.name}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                        placeholder="Full Name"
-                        className="w-full p-3 border rounded-lg"
-                      />
-
-                      <span>
-                        <i className="fas fa-user"></i>
-                      </span>
-                      {formik.touched.name && formik.errors.name && (
-                        <p className="text-danger text-sm">
-                          {formik.errors.name}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-box email-icon mb-30">
-                      <input
-                        type="email"
-                        name="email"
-                        value={formik.values.email}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                        placeholder="Email"
-                        className="w-full p-3 border rounded-lg"
-                      />
-                      <span>
-                        <i className="fas fa-envelope"></i>
-                      </span>
-                      {formik.touched.email && formik.errors.email && (
-                        <p className="text-danger text-sm">
-                          {formik.errors.email}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                  <div className="col-lg-12 mb-4">
-                    <select
-                      name="subject"
-                      value={formik.values.subject}
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      className="form-select w-100 p-3 border rounded"
-                    >
-                      <option value="" label="Select Subject" />
-                      <option value="Web Development" label="Web Development" />
-                      <option
-                        value="Artificial Inteligence"
-                        label="Artificial Inteligence"
-                      />
-                      <option
-                        value="Digital Marketing"
-                        label="Digital Marketing"
-                      />
-                      <option value="DevOps Services" label="DevOps Services" />
-                      <option value="Data Scraping" label="UI/UX Design" />
-                      <option value="UI/UX Design" label="UI/UX Design" />
-                    </select>
-                    {formik.touched.subject && formik.errors.subject && (
-                      <p className="text-danger text-sm">
-                        {formik.errors.subject}
-                      </p>
-                    )}
-                  </div>
-
-                  <div className="col-lg-12">
-                    <div className="form-box message-icon mb-30">
-                      <textarea
-                        name="message"
-                        value={formik.values.message}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                        placeholder="Write your message..."
-                        className="w-full p-3 border rounded-lg"
-                        rows={4}
-                      ></textarea>
-                      <span>
-                        <i className="fas fa-pencil-alt"></i>
-                      </span>
-                      {formik.touched.message && formik.errors.message && (
-                        <p className="text-danger text-sm">
-                          {formik.errors.message}
-                        </p>
-                      )}
-                    </div>
-                    <div className="contact-btn">
-                      <button className="btn" type="submit">
-                        <span className="btn-text">
-                          send message{" "}
-                          <i className="fas fa-long-arrow-alt-righ"></i>
-                        </span>{" "}
-                        <span className="btn-border"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+    <form onSubmit={onSubmit} className="card-surface p-6 md:p-8 flex flex-col gap-5">
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="name" className={label}>
+            Full name
+          </label>
+          <input id="name" name="name" type="text" required className={field} placeholder="Jane Doe" />
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="email" className={label}>
+            Email
+          </label>
+          <input id="email" name="email" type="email" required className={field} placeholder="jane@company.com" />
         </div>
       </div>
-    </>
-  );
-};
 
-export default ContactForm;
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="company" className={label}>
+            Company <span className="text-slatey font-normal">(optional)</span>
+          </label>
+          <input id="company" name="company" type="text" className={field} placeholder="Acme Inc." />
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="service" className={label}>
+            What can we help with?
+          </label>
+          <select id="service" name="service" className={field} defaultValue="">
+            <option value="" disabled>
+              Select a service
+            </option>
+            {services.map((s) => (
+              <option key={s.slug} value={s.slug}>
+                {s.title.replace(/^(Scale|Automate|Grow|Secure|Decide|Convert) With /, "")}
+              </option>
+            ))}
+            <option value="other">Something else</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="message" className={label}>
+          Project details
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows={5}
+          className={field}
+          placeholder="Tell us about your goals, timeline, and budget…"
+        />
+      </div>
+
+      <button
+        type="submit"
+        disabled={submitting}
+        className="group inline-flex items-center justify-center gap-2 bg-ocean-700 text-white font-semibold px-7 py-3.5 hover:bg-ocean-800 transition-colors disabled:opacity-70"
+      >
+        {submitting ? "Sending…" : "Send message"}
+        <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+      </button>
+    </form>
+  );
+}

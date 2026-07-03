@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Code Aquarium
 
-## Getting Started
+Marketing website for **Code Aquarium** — a digital studio building custom software, AI, and growth systems.
 
-First, run the development server:
+Built with **Next.js 15 (App Router)**, **Tailwind CSS**, and **TypeScript**. Server-components-first, image/font optimized, and fully SEO-instrumented (metadata, sitemap, robots).
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script          | Description                     |
+| --------------- | ------------------------------- |
+| `npm run dev`   | Start the dev server            |
+| `npm run build` | Production build                |
+| `npm run start` | Serve the production build      |
+| `npm run lint`  | Run ESLint                      |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Structure
 
-## Learn More
+```
+src/
+  app/                     App Router pages, layout, sitemap, robots, icon
+    services/[slug]/       Dynamic service detail pages
+    case-study/[slug]/     Dynamic case study detail pages
+  components/
+    brand/                 Logo
+    layout/                Header, Footer
+    home/                  Home page sections
+    cards/                 ServiceCard, ProjectCard
+    ui/                    Button, SliderRow, Reveal, PageHero
+    contact/               ContactForm
+    legal/                 Prose wrapper
+  lib/                     Content + config (site, services, projects, testimonials)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Editing content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All copy lives in `src/lib`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `site.ts` — brand name, contact details, nav, stats, social links
+- `services.ts` — service offerings (drive `/services` + detail pages)
+- `projects.ts` — case studies (drive `/portfolio` + detail pages)
+- `testimonials.ts` — client testimonials
 
-## Deploy on Vercel
+Add an item to the array and its detail page is generated automatically.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Brand
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Aquatic identity: deep-ocean navy (`#07182B`), ocean/teal primary (`#0E7490` / `#06B6D4`),
+bright reef teal accent (`#14B8A6`). Tokens live in `tailwind.config.ts`.
+
+## Contact form
+
+`ContactForm.tsx` currently simulates submission on the client. Wire the `onSubmit`
+handler to your API route or form provider (e.g. Formspree, Resend) when ready.

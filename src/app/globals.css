@@ -1,6 +1,108 @@
-/* ====  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+:root {
+ --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
 
+ /* ─────────────────────────────────────────────────────────────
+    BRAND CONTROL — change these two hex values and the entire
+    site (surfaces, buttons, gradients, accents) re-themes.
+    --brand  = the standard dark navy
+    --accent = the highlight / CTA color
+    ───────────────────────────────────────────────────────────── */
+ --brand: #0b0b45;
+ --accent: #14b8a6;
+}
 
+@layer base {
+ html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+ }
 
+ body {
+  @apply bg-white text-ink antialiased;
+  font-feature-settings: "ss01";
+  margin: 0;
+  padding: 0;
+ }
+ body::-webkit-scrollbar {
+  width: 0.5rem;
+ }
+
+ ::selection {
+  @apply bg-ink text-white;
+ }
+
+ h1,
+ h2,
+ h3 {
+  text-wrap: balance;
+ }
+}
+
+@layer components {
+ /* Section rhythm mirroring the reference layout */
+ .section-x {
+  @apply px-5 md:px-20;
+ }
+ .section-y {
+  @apply py-16 md:py-24;
+ }
+ .section-b {
+  @apply pb-16 md:pb-24;
+ }
+
+ .eyebrow {
+  @apply text-ocean-700 font-semibold uppercase tracking-[0.18em] text-sm;
+ }
+
+ .heading-xl {
+  @apply font-bold leading-[1.15] text-[2.25rem] md:text-[3.25rem];
+ }
+ .heading-lg {
+  @apply font-bold leading-tight text-[1.75rem] md:text-[2.75rem];
+ }
+
+ /* Horizontal snap sliders */
+ .no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+ }
+ .no-scrollbar::-webkit-scrollbar {
+  display: none;
+ }
+
+ .card-surface {
+  @apply bg-white border border-slate-200 transition-all duration-300;
+ }
+}
+
+/* Fade the marquee edges */
+.marquee-mask {
+ -webkit-mask-image: linear-gradient(
+  to right,
+  transparent,
+  #000 8%,
+  #000 92%,
+  transparent
+ );
+ mask-image: linear-gradient(
+  to right,
+  transparent,
+  #000 8%,
+  #000 92%,
+  transparent
+ );
+}
+
+@media (prefers-reduced-motion: reduce) {
+ *,
+ *::before,
+ *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+ }
+}
