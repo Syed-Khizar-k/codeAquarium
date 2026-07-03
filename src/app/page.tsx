@@ -1,18 +1,21 @@
-//@refresh
+import Hero from "@/components/home/Hero";
+import TrustedMarquee from "@/components/home/TrustedMarquee";
+import Capabilities from "@/components/home/Capabilities";
+import StatsBanner from "@/components/home/StatsBanner";
+import CaseStudies from "@/components/home/CaseStudies";
+import Testimonials from "@/components/home/Testimonials";
+import CtaBanner from "@/components/home/CtaBanner";
 
-import HomeMain from "@/components/home/HomeMain";
-import Wrapper from "@/layout/DefaultWrapper";
-const  Home = () => {
-
+export default function HomePage() {
   return (
     <>
-      <Wrapper>
-        <main>
-          <HomeMain/>
-        </main>
-      </Wrapper>
+      <Hero />
+      <TrustedMarquee />
+      <Capabilities />
+      <StatsBanner />
+      <CaseStudies />
+      <Testimonials />
+      <CtaBanner />
     </>
   );
 }
-
-export default Home
