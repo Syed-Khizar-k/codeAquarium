@@ -7,7 +7,7 @@ export default function Capabilities() {
     <div className="section-b">
       <SliderRow
         eyebrow="Our Capabilities"
-        title={"Everything you need to dominate your niche,\ndelivered with precision and speed."}
+        title={"Everything you need to dominate your niche,delivered with precision and speed."}
       >
         {services.map((service) => (
           <ServiceCard
