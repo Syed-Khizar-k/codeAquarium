@@ -29,7 +29,7 @@ export default function Testimonials() {
 
   return (
     <section className="section-b">
-      <div className="section-x flex flex-col gap-3 pb-8 md:pb-12 max-w-3xl">
+      <div className="section-x flex flex-col gap-3 pb-8 md:pb-12 max-w-5xl">
         <span className="eyebrow">Evidence of Excellence</span>
         <h2 className="heading-lg">
           We&apos;re proud of our work — and prouder of what our partners say.

@@ -34,8 +34,8 @@ export default function Header() {
   <header
    className={`sticky top-0 z-50 transition-colors duration-300 ${
     scrolled
-     ? "bg-ink backdrop-blur border-b border-white/10"
-     : "bg-[var(--brand)]"
+     ? "bg-[var(--brand)] backdrop-blur border-b border-white/10"
+     : "bg-transparent"
    }`}>
    <div className="max-w-page mx-auto section-x">
     <nav className="flex items-center justify-between py-4">

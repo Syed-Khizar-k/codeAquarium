@@ -42,5 +42,5 @@ export const stats = [
  { value: "98%", label: "Client satisfaction" },
  { value: "Zero", label: "Detractors" },
  { value: "70%", label: "Returning clients" },
- { value: "120+", label: "Projects shipped" },
+ { value: "20+", label: "Projects shipped" },
 ];
