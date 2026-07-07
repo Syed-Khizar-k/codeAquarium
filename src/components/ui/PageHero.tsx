@@ -17,7 +17,7 @@ export default function PageHero({
  crumbs,
 }: PageHeroProps) {
  return (
-  <section className="relative -mt-[78px] bg-cover bg-center overflow-hidden bg-[url('/banners/hero-mob.svg')] md:bg-[url('/banners/hero-desk.svg')] text-white">
+  <section className="relative -mt-[87px] bg-cover bg-center overflow-hidden bg-[url('/banners/hero-mob.svg')] md:bg-[url('/banners/hero-desk.svg')] text-white">
    <div className="relative max-w-page mx-auto section-x pt-32 pb-16 md:pt-40 md:pb-24">
     {eyebrow && (
      <span className="uppercase tracking-[0.18em] text-ocean-200 text-sm font-semibold">
