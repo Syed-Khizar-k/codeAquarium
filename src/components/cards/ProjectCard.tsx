@@ -23,7 +23,7 @@ export default function ProjectCard({ project, widthClass = "" }: ProjectCardPro
             alt={`${project.title} — project mockup`}
             fill
             sizes="(max-width: 640px) 85vw, 416px"
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
           />
         </div>
         <span className="w-fit rounded-full px-4 py-1.5 bg-ocean-50 text-ocean-700 text-sm font-medium">

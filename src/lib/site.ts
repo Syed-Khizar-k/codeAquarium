@@ -5,7 +5,8 @@ export const site = {
  description:
   "Code Aquarium is a digital studio building custom software, AI, and growth systems — web development, artificial intelligence, digital marketing, DevOps, data engineering, and UX/UI — that turn ambitious ideas into measurable results.",
  url: "https://codeaquarium.com",
- email: "contact@codeaquarium.tech",
+ email: "info@codeaquarium.tech",
+ email2: "khizar@codeaquarium.tech",
  phone: "+92 328 0562360",
  phoneHref: "+92 328 0562360",
  location: "Lahore, PK",
@@ -21,6 +22,7 @@ export const mainNav = [
  { label: "About", href: "/about" },
  { label: "Services", href: "/services" },
  { label: "Portfolio", href: "/portfolio" },
+  { label: "Free Consultancy", href: "/free-consultancy" },
 ];
 
 export const footerNav = {
@@ -29,6 +31,7 @@ export const footerNav = {
   { label: "Our Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About Us", href: "/about" },
+  { label: "Free Consultation", href: "/free-consultancy" },
   { label: "Contact Us", href: "/contact" },
  ],
  legal: [

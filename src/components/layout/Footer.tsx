@@ -103,6 +103,13 @@ export default function Footer() {
           {site.email}
          </a>
         </li>
+        <li>
+         <a
+          href={`mailto:${site.email}`}
+          className="text-white/75 hover:text-ocean-300 transition-colors">
+          {site.email2}
+         </a>
+        </li>
         <li className="text-white/75">{site.location}</li>
        </ul>
        <div className="flex gap-4 mt-5">
