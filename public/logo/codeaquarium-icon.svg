@@ -1,0 +1,17 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+  <!-- bubble ring, open at the surface (top-right) -->
+  <path d="M 214.66 94.64 A 98 98 0 1 1 145.36 25.34"
+        fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="170" cy="63" r="5.5" fill="#2DD4DF"/>
+  <circle cx="190" cy="40" r="8"   fill="#2DD4DF"/>
+  <circle cx="212" cy="16" r="11"  fill="#2DD4DF"/>
+  <!-- the code inside the aquarium -->
+  <path d="M96 92 L 62 124 L 96 156" stroke="#FFFFFF" stroke-width="14"
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M144 92 L 178 124 L 144 156" stroke="#FFFFFF" stroke-width="14"
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M133 82 L 107 166" stroke="#2DD4DF" stroke-width="12"
+        stroke-linecap="round" fill="none"/>
+</g>
+</svg>

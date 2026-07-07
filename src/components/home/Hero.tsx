@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
  return (
-  <section className="relative -mt-[78px] overflow-hidden bg-[url('/home/hero-mob.svg')] md:bg-[url('/home/hero-desk.svg')] bg-cover bg-center text-white">
+  <section className="relative -mt-[87px] overflow-hidden bg-[url('/home/hero-mob.svg')] md:bg-[url('/home/hero-desk.svg')] bg-cover bg-center text-white">
    {/* ambient bubbles */}
 
    <div className="relative max-w-page mx-auto section-x pt-20 pb-18 md:pt-20 md:pb-20">
