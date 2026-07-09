@@ -9,7 +9,6 @@ import type { Metadata } from "next";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 import { projects, type Project } from "@/lib/projects";
-import { testimonials } from "@/lib/testimonials";
 
 /** Absolute URL for a path, e.g. abs("/services") → https://…/services */
 export const BASE_URL = site.url.replace(/\/$/, "");
@@ -75,10 +74,6 @@ type Json = Record<string, unknown>;
    Site-wide entity node. Everything else references it by @id.
    ───────────────────────────────────────────────────────────── */
 export function organizationSchema(): Json {
-  const ratings = testimonials.map((t) => t.rating);
-  const ratingValue =
-    ratings.reduce((a, b) => a + b, 0) / (ratings.length || 1);
-
   return {
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],
@@ -132,23 +127,10 @@ export function organizationSchema(): Json {
         url: abs(`/services/${s.slug}`),
       },
     })),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: ratingValue.toFixed(1),
-      reviewCount: testimonials.length,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    review: testimonials.slice(0, 4).map((t) => ({
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: t.rating,
-        bestRating: 5,
-      },
-      author: { "@type": "Person", name: t.name },
-      reviewBody: t.quote,
-    })),
+    // NOTE: no `review` / `aggregateRating` here. Google does not allow an
+    // organization to mark up reviews about itself (self-serving reviews), and
+    // because this node is injected site-wide it would attach review markup to
+    // pages that don't display reviews — which Search Console flags as invalid.
   };
 }
 
