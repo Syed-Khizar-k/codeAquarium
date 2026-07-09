@@ -15,7 +15,7 @@ export default function CaseStudies() {
      <ProjectCard
       key={project.slug}
       project={project}
-      widthClass="w-[85vw] sm:w-[26rem] md:w-[26rem]"
+      widthClass="w-[85vw] sm:w-[26rem]  md:w-[26rem]"
      />
     ))}
    </SliderRow>
