@@ -4,13 +4,22 @@ import PageHero from "@/components/ui/PageHero";
 import Reveal from "@/components/ui/Reveal";
 import StatsBanner from "@/components/home/StatsBanner";
 import CtaBanner from "@/components/home/CtaBanner";
+import JsonLd from "@/components/seo/JsonLd";
 import { site } from "@/lib/site";
+import { pageMeta, breadcrumbSchema, webPageSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us",
+export const metadata: Metadata = pageMeta({
+  title: "About Us — A Senior Software & AI Studio",
   description:
-    "Code Aquarium is a digital studio of engineers, designers, and strategists building custom software, AI, and growth systems that turn ambitious ideas into measurable results.",
-};
+    "Code Aquarium is a boutique studio of senior engineers, designers, and strategists in Lahore, Pakistan, building custom software, AI, and growth systems that turn ambitious ideas into measurable results.",
+  path: "/about",
+  keywords: [
+    "about Code Aquarium",
+    "software studio Lahore",
+    "senior software development team",
+    "custom software company Pakistan",
+  ],
+});
 
 const values = [
   {
@@ -39,6 +48,20 @@ const approach = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          webPageSchema({
+            path: "/about",
+            name: "About Code Aquarium",
+            description: site.description,
+            type: "AboutPage",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="About Code Aquarium"
         title="A studio where bold ideas learn to swim."

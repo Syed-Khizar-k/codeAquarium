@@ -5,29 +5,45 @@ import { projects } from "@/lib/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.url.replace(/\/$/, "");
-  const staticRoutes = [
-    "",
-    "/about",
-    "/services",
-    "/portfolio",
-    "/free-consultancy",
-    "/contact",
-    "/privacy-policy",
-    "/terms-of-service",
-    "/cookie-policy",
+  const lastModified = new Date();
+
+  // [path, changeFrequency, priority]
+  const staticRoutes: [string, MetadataRoute.Sitemap[number]["changeFrequency"], number][] = [
+    ["", "weekly", 1],
+    ["/services", "monthly", 0.9],
+    ["/portfolio", "monthly", 0.8],
+    ["/free-consultancy", "monthly", 0.8],
+    ["/about", "monthly", 0.6],
+    ["/contact", "monthly", 0.6],
+    ["/privacy-policy", "yearly", 0.2],
+    ["/terms-of-service", "yearly", 0.2],
+    ["/cookie-policy", "yearly", 0.2],
   ];
 
-  const routes: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
-    url: `${base}${path}`,
-    changeFrequency: "monthly",
-    priority: path === "" ? 1 : 0.7,
-  }));
+  const routes: MetadataRoute.Sitemap = staticRoutes.map(
+    ([path, changeFrequency, priority]) => ({
+      url: `${base}${path}`,
+      lastModified,
+      changeFrequency,
+      priority,
+    })
+  );
 
   for (const s of services) {
-    routes.push({ url: `${base}/services/${s.slug}`, changeFrequency: "monthly", priority: 0.6 });
+    routes.push({
+      url: `${base}/services/${s.slug}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
   }
   for (const p of projects) {
-    routes.push({ url: `${base}/case-study/${p.slug}`, changeFrequency: "monthly", priority: 0.6 });
+    routes.push({
+      url: `${base}/case-study/${p.slug}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
   }
 
   return routes;

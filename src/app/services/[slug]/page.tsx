@@ -5,7 +5,18 @@ import { Check, ArrowRight } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import Reveal from "@/components/ui/Reveal";
 import CtaBanner from "@/components/home/CtaBanner";
+import Faq from "@/components/seo/Faq";
+import JsonLd from "@/components/seo/JsonLd";
 import { services, getService } from "@/lib/services";
+import {
+  pageMeta,
+  keywords,
+  cleanServiceName,
+  serviceSchema,
+  breadcrumbSchema,
+  faqSchema,
+} from "@/lib/seo";
+import { serviceFaqs } from "@/lib/faqs";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -17,10 +28,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const service = getService(slug);
   if (!service) return { title: "Service not found" };
-  return {
-    title: service.title,
-    description: service.short,
-  };
+  const name = cleanServiceName(service.title);
+  return pageMeta({
+    title: `${name} Services`,
+    description: service.summary,
+    path: `/services/${service.slug}`,
+    keywords: keywords.service[service.slug],
+  });
 }
 
 export default async function ServiceDetailPage({ params }: Params) {
@@ -30,9 +44,23 @@ export default async function ServiceDetailPage({ params }: Params) {
 
   const { icon: Icon } = service;
   const others = services.filter((s) => s.slug !== service.slug);
+  const faqs = serviceFaqs[service.slug] ?? [];
+  const schema = serviceSchema(service.slug);
+  const name = cleanServiceName(service.title);
 
   return (
     <>
+      <JsonLd
+        schema={[
+          ...(schema ? [schema] : []),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Services", path: "/services" },
+            { name, path: `/services/${service.slug}` },
+          ]),
+          ...(faqs.length ? [faqSchema(faqs)] : []),
+        ]}
+      />
       <PageHero
         eyebrow="Services"
         title={service.title}
@@ -118,6 +146,14 @@ export default async function ServiceDetailPage({ params }: Params) {
           </aside>
         </div>
       </section>
+
+      {faqs.length > 0 && (
+        <Faq
+          items={faqs}
+          title={`${name} — frequently asked questions`}
+          description={`Common questions about our ${name.toLowerCase()} services, pricing, and process.`}
+        />
+      )}
 
       <CtaBanner />
     </>
