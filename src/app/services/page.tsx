@@ -3,17 +3,49 @@ import PageHero from "@/components/ui/PageHero";
 import Reveal from "@/components/ui/Reveal";
 import ServiceCard from "@/components/cards/ServiceCard";
 import CtaBanner from "@/components/home/CtaBanner";
+import JsonLd from "@/components/seo/JsonLd";
 import { services } from "@/lib/services";
+import {
+  pageMeta,
+  breadcrumbSchema,
+  servicesItemListSchema,
+  webPageSchema,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services",
+export const metadata: Metadata = pageMeta({
+  title: "Software, AI & Web Development Services",
   description:
-    "Web development, artificial intelligence, digital marketing, DevOps & cloud, data engineering, and UX/UI design — everything you need to dominate your niche.",
-};
+    "Explore Code Aquarium's services: custom web development (Next.js), AI & automation, digital marketing & SEO, DevOps & cloud, data engineering, and UX/UI design — for startups and brands worldwide.",
+  path: "/services",
+  keywords: [
+    "software development services",
+    "web development services",
+    "AI development services",
+    "digital marketing services",
+    "DevOps consulting services",
+    "UX UI design services",
+  ],
+});
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          webPageSchema({
+            path: "/services",
+            name: "Software, AI & Web Development Services",
+            description:
+              "Custom web development, AI & automation, digital marketing, DevOps & cloud, data engineering, and UX/UI design.",
+            type: "CollectionPage",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Services", path: "/services" },
+          ]),
+          servicesItemListSchema(),
+        ]}
+      />
       <PageHero
         eyebrow="Our Capabilities"
         title="Everything you need to dominate your niche."

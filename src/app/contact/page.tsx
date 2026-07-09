@@ -2,13 +2,22 @@ import type { Metadata } from "next";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import ContactForm from "@/components/contact/ContactForm";
+import JsonLd from "@/components/seo/JsonLd";
 import { site } from "@/lib/site";
+import { pageMeta, breadcrumbSchema, webPageSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
+export const metadata: Metadata = pageMeta({
+  title: "Contact Us — Start Your Project",
   description:
-    "Ready to dive in? Get in touch with Code Aquarium to scope your project and claim your free strategy session.",
-};
+    "Get in touch with Code Aquarium to scope your web, AI, or software project. Based in Lahore, Pakistan, working with clients worldwide. Free strategy consultation available.",
+  path: "/contact",
+  keywords: [
+    "contact Code Aquarium",
+    "hire software developers",
+    "web development agency contact",
+    "software company Lahore contact",
+  ],
+});
 
 export default function ContactPage() {
   const details = [
@@ -20,6 +29,21 @@ export default function ContactPage() {
 
   return (
     <>
+      <JsonLd
+        schema={[
+          webPageSchema({
+            path: "/contact",
+            name: "Contact Code Aquarium",
+            description:
+              "Contact Code Aquarium to scope your web, AI, or software project.",
+            type: "ContactPage",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Let's Talk"
         title="Ready to dive in?"

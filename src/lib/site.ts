@@ -4,7 +4,7 @@ export const site = {
  tagline: "Where bold ideas learn to swim.",
  description:
   "Code Aquarium is a digital studio building custom software, AI, and growth systems — web development, artificial intelligence, digital marketing, DevOps, data engineering, and UX/UI — that turn ambitious ideas into measurable results.",
- url: "https://codeaquarium.com",
+ url: "https://codeaquarium.tech",
  email: "info@codeaquarium.tech",
  email2: "khizar@codeaquarium.tech",
  phone: "+92 328 0562360",

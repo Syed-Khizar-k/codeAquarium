@@ -6,7 +6,9 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import Reveal from "@/components/ui/Reveal";
 import CtaBanner from "@/components/home/CtaBanner";
+import JsonLd from "@/components/seo/JsonLd";
 import { projects, getProject } from "@/lib/projects";
+import { pageMeta, caseStudySchema, breadcrumbSchema } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -18,7 +20,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
  const { slug } = await params;
  const project = getProject(slug);
  if (!project) return { title: "Case study not found" };
- return { title: project.title, description: project.excerpt };
+ return pageMeta({
+  title: `${project.title} — ${project.tag} Case Study`,
+  description: project.excerpt,
+  path: `/case-study/${project.slug}`,
+  ogType: "article",
+  keywords: project.services,
+ });
 }
 
 export default async function CaseStudyPage({ params }: Params) {
@@ -31,6 +39,16 @@ export default async function CaseStudyPage({ params }: Params) {
 
  return (
   <>
+   <JsonLd
+    schema={[
+     caseStudySchema(project),
+     breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Portfolio", path: "/portfolio" },
+      { name: project.title, path: `/case-study/${project.slug}` },
+     ]),
+    ]}
+   />
    <PageHero
     eyebrow={project.tag}
     title={project.title}

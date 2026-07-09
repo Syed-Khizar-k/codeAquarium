@@ -1,0 +1,29 @@
+# Code Aquarium
+
+> Code Aquarium is a boutique digital studio based in Lahore, Pakistan, building custom software, AI systems, and growth engines for startups and established brands worldwide. Core specialties: custom web development (Next.js/React), and artificial intelligence & automation (AI copilots, agents, and workflow automation). Supporting services: digital marketing & SEO, DevOps & cloud, data engineering, and UX/UI design.
+
+Positioning: a small, senior team — clients work directly with engineers and designers, no junior benches or hand-offs. Offshore economics with boutique quality. Serves clients across North America, Europe, the Middle East, and Australia, plus local Lahore/Pakistan clients.
+
+Contact: info@codeaquarium.tech · Lahore, Pakistan · Free 30-minute strategy consultation available.
+
+## Services
+- [Web Development](https://codeaquarium.com/services/web-development): High-performance websites, web apps, SaaS, and e-commerce on Next.js, React, and TypeScript — engineered for speed, SEO, and conversion.
+- [Artificial Intelligence & Automation](https://codeaquarium.com/services/artificial-intelligence): Custom AI copilots, chatbots, AI agents, document intelligence, and workflow automation wired into existing tools; secure, cost-aware LLM integration.
+- [Digital Marketing](https://codeaquarium.com/services/digital-marketing): Full-funnel growth — technical & content SEO, paid acquisition, lifecycle/email, analytics and conversion-rate optimization.
+- [DevOps & Cloud](https://codeaquarium.com/services/devops-cloud): CI/CD pipelines, cloud architecture (AWS/GCP/Azure), observability, and security for 99.9%+ uptime.
+- [Data Engineering](https://codeaquarium.com/services/data-engineering): Web scraping, ETL/ELT pipelines, data warehousing, and BI dashboards for reliable, decision-ready data.
+- [UX/UI Design](https://codeaquarium.com/services/ux-ui-design): Product/UX design, design systems, prototyping, and Figma-to-code for interfaces that lift conversion.
+
+## Key pages
+- [Home](https://codeaquarium.com/): Overview of services, work, and outcomes.
+- [Services](https://codeaquarium.com/services): All six service areas.
+- [Portfolio](https://codeaquarium.com/portfolio): Case studies with measurable results.
+- [About](https://codeaquarium.com/about): Team philosophy and how we work.
+- [Contact](https://codeaquarium.com/contact): Start a project or ask a question.
+- [Free Consultation](https://codeaquarium.com/free-consultancy): Book a free 30-minute strategy session.
+
+## Selected case studies
+- RocketOps AI — AI operations platform: cut manual ops time by 65% with custom copilots and automation.
+- Shifts Swaps — corporate SaaS for shift swapping: +52% dashboard speed, 99% accessibility, end-to-end encryption.
+- MyGoToDoc — HIPAA-compliant telehealth platform: +63% completed consultations, <5 min to booking.
+- HyperG Internet — internet-packages platform: median page load 2.4s → 0.8s, 99.98% uptime.
