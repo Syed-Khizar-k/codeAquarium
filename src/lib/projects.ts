@@ -193,6 +193,26 @@ export const projects: Project[] = [
   approach:
    "We designed a streamlined, mobile-first booking flow with real-time scheduling — lifting online bookings while cutting phone volume by a third.",
  },
+ {
+  slug: "fuel-track-pro",
+  title: "Fuel Track Pro",
+  tag: "SaaS & Web Development",
+  image: "",
+  excerpt:
+   "A SaaS platform for UAE Construction site managers to track fuel usage, optimize routes, and reduce costs with real-time analytics.",
+  summary:
+   "Fuel Track Pro needed a solution to monitor fuel consumption across multiple construction sites. We developed a SaaS platform that provides real-time tracking, analytics, and reporting to help managers optimize fuel usage and reduce operational costs.",
+  services: ["Frontend Development", "AI Integrations", "SaaS Development"],
+  results: [
+   { value: "100L → 0L", label: "Fuel Corruption Reduced" },
+   { value: "100%", label: "Corruption Prevention" },
+   { value: "97%", label: "Reliable Ui Dashboard" },
+  ],
+  challenge:
+   "UAE Construction site managers struggled with tracking fuel usage and optimizing routes, leading to increased costs and inefficiencies. They needed a digital solution to monitor fuel consumption and reduce operational expenses.",
+  approach:
+   "Code Aquarium Technologies provide solution by developing a SaaS platform that enables real-time fuel tracking, route optimization, and comprehensive analytics. The platform helps managers make data-driven decisions to reduce fuel consumption and operational costs.",
+ },
 ];
 
 export function getProject(slug: string) {
