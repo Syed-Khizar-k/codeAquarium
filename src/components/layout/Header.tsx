@@ -39,7 +39,7 @@ export default function Header() {
    }`}>
    <div className="max-w-page mx-auto section-x">
     <nav className="flex items-center justify-between py-4">
-     <Link href="/" aria-label="Code Aquarium home">
+     <Link href="/" aria-label="Code Aquarium Technologies home">
       <Logo />
      </Link>
 

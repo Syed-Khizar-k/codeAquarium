@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { site } from "@/lib/site";
 
 export default function Hero() {
  return (
@@ -13,7 +14,7 @@ export default function Hero() {
      <p className="mt-6 text-white/75 text-lg md:text-xl leading-relaxed max-w-4xl">
       There&apos;s a lot of noise about digital solutions, and standing out
       feels harder than ever. That&apos;s exactly where we swim in. At{" "}
-      <strong className="text-white font-semibold">Code Aquarium</strong>, we
+      <strong className="text-white font-semibold">{site.name}</strong>, we
       craft custom software, AI, and growth systems that turn ambitious ideas
       into measurable results.
      </p>

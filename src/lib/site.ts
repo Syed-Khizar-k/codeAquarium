@@ -1,9 +1,9 @@
 export const site = {
- name: "Code Aquarium",
- legalName: "Code Aquarium",
+ name: "Code Aquarium Technologies",
+ legalName: "Code Aquarium Technologies",
  tagline: "Where bold ideas learn to swim.",
  description:
-  "Code Aquarium is a digital studio building custom software, AI, and growth systems — web development, artificial intelligence, digital marketing, DevOps, data engineering, and UX/UI — that turn ambitious ideas into measurable results.",
+  "Code Aquarium Technologies is a standalone digital technology company building custom software, AI systems, web platforms, digital marketing engines, DevOps, data engineering, and UX/UI solutions that turn ambitious ideas into measurable results.",
  url: "https://codeaquarium.tech",
  email: "info@codeaquarium.tech",
  email2: "khizar@codeaquarium.tech",
@@ -22,7 +22,7 @@ export const mainNav = [
  { label: "About", href: "/about" },
  { label: "Services", href: "/services" },
  { label: "Portfolio", href: "/portfolio" },
-  { label: "Free Consultancy", href: "/free-consultancy" },
+ { label: "Free Consultancy", href: "/free-consultancy" },
 ];
 
 export const footerNav = {

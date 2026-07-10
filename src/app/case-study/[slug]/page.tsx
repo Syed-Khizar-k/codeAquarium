@@ -63,14 +63,20 @@ export default async function CaseStudyPage({ params }: Params) {
    {/* Showcase mockup */}
    <section className="section-x -mt-8 md:-mt-12">
     <div className="relative aspect-[16/9] w-full overflow-hidden border border-slate-200 bg-ocean-gradient shadow-xl">
-     <Image
-      src={project.image}
-      alt={`${project.title} — project mockup`}
-      fill
-      priority
-      sizes="(max-width: 1280px) 100vw, 1200px"
-      className="object-cover object-center"
-     />
+     {project.image === "" ? (
+      <div className="flex items-center justify-center w-full font-bold h-full text-white">
+       Project is still in progress ...
+      </div>
+     ) : (
+      <Image
+       src={project.image}
+       alt={`${project.title} — project mockup`}
+       fill
+       priority
+       sizes="(max-width: 1280px) 100vw, 1200px"
+       className="object-cover object-center"
+      />
+     )}
     </div>
    </section>
 
