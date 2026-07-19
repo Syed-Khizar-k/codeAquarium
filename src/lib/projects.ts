@@ -194,25 +194,21 @@ export const projects: Project[] = [
    "We designed a streamlined, mobile-first booking flow with real-time scheduling — lifting online bookings while cutting phone volume by a third.",
  },
  {
-  slug: "fuel-track-pro",
-  title: "Fuel Track Pro",
-  tag: "SaaS & Web Development",
-  image: "",
-  excerpt:
-   "A SaaS platform for UAE Construction site managers to track fuel usage, optimize routes, and reduce costs with real-time analytics.",
-  summary:
-   "Fuel Track Pro needed a solution to monitor fuel consumption across multiple construction sites. We developed a SaaS platform that provides real-time tracking, analytics, and reporting to help managers optimize fuel usage and reduce operational costs.",
-  services: ["Frontend Development", "AI Integrations", "SaaS Development"],
-  results: [
-   { value: "100L → 0L", label: "Fuel Corruption Reduced" },
-   { value: "100%", label: "Corruption Prevention" },
-   { value: "97%", label: "Reliable Ui Dashboard" },
+  "slug": "rocket-attendance",
+  "title": "Rocket Attendance",
+  "tag": "SaaS & Web Development",
+  "image": "",
+  "excerpt": "A tamper-proof, AI-driven workforce attendance and compliance SaaS built specifically for GCC construction worksites.",
+  "summary": "Rocket Attendance replaces manual paper musters and traditional biometric hardware on construction sites with a robust mobile-first solution. Using on-device face matching, offline syncing, and precise geofencing, it gives project managers real-time workforce visibility while using AI to optimize manpower distribution and prevent expensive compliance fines.",
+  "services": ["Frontend Development", "AI Integrations", "SaaS Development", "Mobile App Development"],
+  "results": [
+    { "value": "2–4%", "label": "Payroll Recovered from Buddy-Punching" },
+    { "value": "AED 150K", "label": "Visa Overstay Fines Avoided per Year" },
+    { "value": "30 min", "label": "Monthly Reporting—Down from 3 Days" }
   ],
-  challenge:
-   "UAE Construction site managers struggled with tracking fuel usage and optimizing routes, leading to increased costs and inefficiencies. They needed a digital solution to monitor fuel consumption and reduce operational expenses.",
-  approach:
-   "Code Aquarium Technologies provide solution by developing a SaaS platform that enables real-time fuel tracking, route optimization, and comprehensive analytics. The platform helps managers make data-driven decisions to reduce fuel consumption and operational costs.",
- },
+  "challenge": "GCC construction site managers heavily relied on manual paper muster sheets and easily cheated biometric thumbs to track thousands of multi-sponsor workers. This lack of visibility led to rampant 'buddy-punching,' unapproved off-site sign-ins, delayed monthly payroll reporting, and massive AED 250/day fines due to un-tracked visa and labor card expiries.",
+  "approach": "Code Aquarium Technologies developed a robust, multi-lingual SaaS platform featuring an on-device, offline-capable AI facial recognition app for supervisors' phones alongside a comprehensive web dashboard. The system integrates KML geofencing to prevent out-of-bounds check-ins, automated document countdown watchtowers, and deterministic AI insights that suggest optimal trade reallocations across active jobsites."
+}
 ];
 
 export function getProject(slug: string) {
