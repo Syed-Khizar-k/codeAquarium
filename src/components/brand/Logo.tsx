@@ -8,7 +8,7 @@ type LogoProps = {
 };
 
 /**
- * Code Aquarium logomark: a stylized fish formed from a code caret,
+ * Code Aquarium Technologies logomark: a stylized fish formed from a code caret,
  * set inside a rounded "tank". Uses currentColor-friendly gradients.
  */
 export default function Logo() {
@@ -52,14 +52,14 @@ export default function Logo() {
   //   </svg>
   //   {showWordmark && (
   //     <span className={`font-bold text-[1.15rem] tracking-tight leading-none ${wordmarkClassName}`}>
-  //       Code Aquarium
+  //       Code Aquarium Technologies
   //     </span>
   //   )}
   // </span>
   <div className={`inline-flex items-center `}>
    <Image
     src="/logo/codeaquarium-logo-white.svg"
-    alt="Code Aquarium Logo"
+    alt="Code Aquarium Technologies Logo"
     width={160}
     height={80}
     className="shrink-0"

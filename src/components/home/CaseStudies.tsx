@@ -7,7 +7,7 @@ export default function CaseStudies() {
  return (
   <div className="section-b">
    <SliderRow
-    eyebrow="Real Solutions, Real Results"
+    eyebrow="Real Solutions, Real Results."
     title={
      "See how we've helped our partners turn big ideas into digital reality."
     }>
@@ -15,7 +15,7 @@ export default function CaseStudies() {
      <ProjectCard
       key={project.slug}
       project={project}
-      widthClass="w-[85vw] sm:w-[26rem] md:w-[26rem]"
+      widthClass="w-[85vw] sm:w-[26rem]  md:w-[26rem]"
      />
     ))}
    </SliderRow>
