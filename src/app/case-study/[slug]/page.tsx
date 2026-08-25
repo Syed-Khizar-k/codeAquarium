@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight, ArrowLeft, ExternalLink } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import Reveal from "@/components/ui/Reveal";
 import CtaBanner from "@/components/home/CtaBanner";
@@ -125,9 +125,55 @@ export default async function CaseStudyPage({ params }: Params) {
         </li>
        ))}
       </ul>
+
+      {project.stack && project.stack.length > 0 && (
+       <>
+        <h3 className="mt-8 font-bold text-lg">Tech stack</h3>
+        <ul className="mt-4 flex flex-wrap gap-2">
+         {project.stack.map((t) => (
+          <li
+           key={t}
+           className="rounded-full border border-slate-200 text-slatey text-sm px-3.5 py-1.5">
+           {t}
+          </li>
+         ))}
+        </ul>
+       </>
+      )}
+
+      {(project.client || project.year) && (
+       <dl className="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 text-sm">
+        {project.client && (
+         <div className="flex items-baseline justify-between gap-4">
+          <dt className="text-slatey">Client</dt>
+          <dd className="font-semibold text-ink text-right">
+           {project.client}
+          </dd>
+         </div>
+        )}
+        {project.year && (
+         <div className="flex items-baseline justify-between gap-4">
+          <dt className="text-slatey">Year</dt>
+          <dd className="font-semibold text-ink text-right">{project.year}</dd>
+         </div>
+        )}
+       </dl>
+      )}
+
+      {project.url && (
+       <a
+        href={project.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 flex w-fit items-center gap-2 font-semibold text-ocean-700 hover:text-ocean-800 transition-colors">
+        Visit live site
+        <ExternalLink className="h-4 w-4" />
+       </a>
+      )}
+
       <Link
        href="/contact"
-       className="mt-6 inline-flex items-center gap-2 font-semibold text-ocean-700 hover:text-ocean-800 transition-colors">
+       className="mt-6 flex w-fit items-center gap-2 font-semibold text-ocean-700 hover:text-ocean-800 transition-colors">
        Start a similar project
        <ArrowRight className="h-4 w-4" />
       </Link>
