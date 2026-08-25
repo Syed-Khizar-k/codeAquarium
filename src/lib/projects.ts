@@ -19,7 +19,7 @@ export type Project = {
  /** frontend / backend / infra the project runs on */
  stack?: string[];
 };
-
+ 
 export const projects: Project[] = [
  {
   slug: "reserve-karu",
