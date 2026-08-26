@@ -35,13 +35,12 @@ export default function BookingWidget() {
  const [submitting, setSubmitting] = useState(false);
  const [error, setError] = useState<string | null>(null);
 
- // Detect the visitor's timezone on mount; the list is built once.
- useEffect(() => setTz(localTimezone()), []);
- const timezones = useMemo(() => {
-  const list = allTimezones();
-  const detected = localTimezone();
-  return list.includes(detected) ? list : [detected, ...list];
+ // Detect the visitor's timezone on mount.
+ useEffect(() => {
+  setTz(localTimezone());
  }, []);
+
+ const timezones = useMemo(() => allTimezones(), []);
 
  const slots = useMemo(() => (date ? slotsForDate(date, tz) : []), [date, tz]);
 
@@ -74,12 +73,7 @@ export default function BookingWidget() {
    company: String(form.get("company") || ""),
    service: String(form.get("service") || ""),
    message: String(form.get("message") || ""),
-   date: date.toLocaleDateString(undefined, {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-   }),
+   date: formatLongDate(date),
    dateISO: date.toISOString().slice(0, 10),
    time: slot.label,
    time24: slot.value,

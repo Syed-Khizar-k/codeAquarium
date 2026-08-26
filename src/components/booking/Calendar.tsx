@@ -32,7 +32,7 @@ export default function Calendar({ selected, tz, onSelect }: CalendarProps) {
   for (let i = 0; i < firstWeekday; i++) cells.push(null);
   for (let d = 1; d <= daysInMonth; d++) cells.push(new Date(year, month, d));
 
-  const monthLabel = view.toLocaleDateString(undefined, {
+  const monthLabel = view.toLocaleDateString("en-US", {
     month: "long",
     year: "numeric",
   });

@@ -108,7 +108,7 @@ export function formatTime(hour: number, minute: number): string {
 
 /** e.g. "Tuesday, July 7, 2026" */
 export function formatLongDate(d: Date): string {
-  return d.toLocaleDateString(undefined, {
+  return d.toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
     month: "long",
