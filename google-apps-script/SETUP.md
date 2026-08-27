@@ -1,57 +1,59 @@
-# Wiring the Free Consultancy page to your Google Sheet
+# Wiring the Free Consultancy page to your Google Sheet & Email Reminders
 
-Bookings from `/free-consultancy` are appended to your sheet via a small Google
-Apps Script Web App. No API keys or service accounts needed. One-time setup:
+Bookings from `/free-consultancy` are appended to your sheet and trigger instant email reminders via a Google Apps Script Web App. No paid API keys or third-party email services needed.
+
+---
 
 ## 1. Add the script to the sheet
 
-1. Open the sheet:
+1. Open your target Google Sheet:
    https://docs.google.com/spreadsheets/d/1qm7Avga6wpM_lvqMI3xiCS4rK-wjSk8tuwhiN-Chw_o/edit
-2. Menu: **Extensions → Apps Script**.
-3. Delete anything in `Code.gs`, then paste the full contents of
-   [`Code.gs`](./Code.gs) from this folder.
-4. Click **Save** (💾).
+2. In the top menu, go to: **Extensions → Apps Script**.
+3. Delete anything in `Code.gs`, and paste the contents of [`Code.gs`](./Code.gs).
+4. *(Optional)* At the top of `Code.gs`, set your email for reminders:
+   ```javascript
+   var NOTIFICATION_EMAIL = 'your-email@example.com';
+   ```
+   *(If left empty, it will automatically email the Google account owner of the sheet).*
+5. Click **Save** (💾).
+
+---
 
 ## 2. Deploy as a Web App
 
-1. In the Apps Script editor: **Deploy → New deployment**.
+1. In the Apps Script editor, click **Deploy → New deployment**.
 2. Click the gear ⚙️ next to "Select type" → **Web app**.
-3. Set:
-   - **Description**: `Code Aquarium bookings`
+3. Configure settings:
+   - **Description**: `Code Aquarium bookings & reminders`
    - **Execute as**: **Me**
-   - **Who has access**: **Anyone**  ← required so the site can POST to it
-4. Click **Deploy**, then **Authorize access** and approve the permissions
-   (Google will warn it's an unverified app you wrote — that's expected).
-5. Copy the **Web app URL**. It ends in `/exec`.
+   - **Who has access**: **Anyone**  ← *(Required so submissions can reach the script)*
+4. Click **Deploy**, then **Authorize access** and allow permissions (Gmail + Sheets).
+5. Copy the **Web app URL** (ends in `/exec`).
 
-> Tip: paste the `/exec` URL into a browser — you should see
-> `{"ok":true,"service":"code-aquarium-bookings"}`. That confirms it's live.
+---
 
 ## 3. Point the site at it
 
-Create (or edit) `.env.local` in the project root:
+In `.env.local` in the project root:
 
+```env
+GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/YOUR_DEPLOYED_ID/exec
 ```
-GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/XXXXXXXX/exec
-```
 
-Restart the dev server (`npm run dev`) or redeploy so the env var loads.
+Restart the dev server (`npm run dev`) or redeploy your hosting environment (Vercel/Netlify).
 
-On your host (Vercel/Netlify/etc.), add the same variable under the project's
-Environment Variables and redeploy.
+---
 
-## 4. Test
+## 4. How Reminders Work
 
-Go to `/free-consultancy`, pick a date + time, fill in the form, and confirm.
-A new row appears in the **Bookings** tab. The header row is created
-automatically on the first booking.
+When a user submits the booking form:
+1. **Google Sheet**: A new row is added under the **`Bookings`** tab.
+2. **Admin Email Reminder**: You immediately receive an email notification with the client's name, email, phone, company, service requested, meeting time, and notes.
+3. **Client Confirmation Email**: The client receives a confirmation email acknowledging their booking.
+
+---
 
 ## Updating the script later
 
-If you edit `Code.gs`, redeploy: **Deploy → Manage deployments → ✏️ (edit) →
-Version: New version → Deploy**. The `/exec` URL stays the same.
-
-## Columns written
-
-`Submitted At · Name · Email · Phone · Company · Service · Message · Date ·
-Date (ISO) · Time · Time (24h) · Timezone · Event · Duration`
+Whenever you update `Code.gs`, update the deployment:
+**Deploy → Manage deployments → ✏️ (Edit) → Version: "New version" → Deploy**.
